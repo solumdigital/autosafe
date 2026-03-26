@@ -1,56 +1,86 @@
+// ═══════════════════════════════════════════
+// AUTOSAFE — Main JS
+// ═══════════════════════════════════════════
+
+// ── SPA Page Navigation ──
 function showPage(pageId) {
-  // Hide all pages
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  // Show selected
   const target = document.getElementById('page-' + pageId);
   if (target) target.classList.add('active');
-  // Update nav active
   document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
     a.classList.remove('active');
     if (a.dataset.page === pageId) a.classList.add('active');
   });
-  // Scroll to top
+  closeMobileNav();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// ── Mobile Navigation ──
+let mobileNavOpen = false;
+
 function toggleMobileNav() {
   const nav = document.getElementById('navLinks');
-  if (nav.style.display === 'flex') {
-    nav.style.display = 'none';
+  const toggle = document.querySelector('.mobile-toggle i');
+  mobileNavOpen = !mobileNavOpen;
+  if (mobileNavOpen) {
+    nav.classList.add('mobile-open');
+    toggle.className = 'fa-solid fa-xmark';
   } else {
-    nav.style.display = 'flex';
-    nav.style.flexDirection = 'column';
-    nav.style.position = 'absolute';
-    nav.style.top = '80px';
-    nav.style.left = '0';
-    nav.style.right = '0';
-    nav.style.background = 'white';
-    nav.style.padding = '16px';
-    nav.style.boxShadow = '0 8px 32px rgba(0,0,0,0.1)';
-    nav.style.zIndex = '999';
+    nav.classList.remove('mobile-open');
+    toggle.className = 'fa-solid fa-bars';
   }
 }
 
-// Hero Slider
+function closeMobileNav() {
+  const nav = document.getElementById('navLinks');
+  const toggle = document.querySelector('.mobile-toggle i');
+  if (mobileNavOpen) {
+    mobileNavOpen = false;
+    nav.classList.remove('mobile-open');
+    if (toggle) toggle.className = 'fa-solid fa-bars';
+  }
+}
+
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById('navLinks');
+  const toggle = document.querySelector('.mobile-toggle');
+  if (mobileNavOpen && !nav.contains(e.target) && !toggle.contains(e.target)) {
+    closeMobileNav();
+  }
+});
+
+// ── Hero Slider ──
 let currentSlide = 0;
 const totalSlides = 4;
 
 function goToSlide(n) {
   currentSlide = n;
-  // Background images
-  document.querySelectorAll('.hero-slide').forEach((s, i) => {
-    s.classList.toggle('active', i === n);
-  });
-  // Content slides
-  document.querySelectorAll('.hero-content-slide').forEach((s, i) => {
-    s.classList.toggle('active', i === n);
-  });
-  // Dots
-  document.querySelectorAll('.hero-dot').forEach((d, i) => {
-    d.classList.toggle('active', i === n);
-  });
+  document.querySelectorAll('.hero-slide').forEach((s, i) => s.classList.toggle('active', i === n));
+  document.querySelectorAll('.hero-content-slide').forEach((s, i) => s.classList.toggle('active', i === n));
+  document.querySelectorAll('.hero-dot').forEach((d, i) => d.classList.toggle('active', i === n));
 }
 
-setInterval(() => {
-  goToSlide((currentSlide + 1) % totalSlides);
-}, 8000);
+let sliderInterval = setInterval(() => goToSlide((currentSlide + 1) % totalSlides), 8000);
+
+// Pause on manual dot click, resume after 12s
+document.querySelectorAll('.hero-dot').forEach(dot => {
+  dot.addEventListener('click', () => {
+    clearInterval(sliderInterval);
+    sliderInterval = setInterval(() => goToSlide((currentSlide + 1) % totalSlides), 12000);
+  });
+});
+
+// Touch swipe for hero slider
+let touchStartX = 0;
+const heroEl = document.querySelector('.hero');
+if (heroEl) {
+  heroEl.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+  heroEl.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].screenX;
+    if (Math.abs(diff) > 60) {
+      clearInterval(sliderInterval);
+      goToSlide(diff > 0 ? (currentSlide + 1) % totalSlides : (currentSlide - 1 + totalSlides) % totalSlides);
+      sliderInterval = setInterval(() => goToSlide((currentSlide + 1) % totalSlides), 12000);
+    }
+  }, { passive: true });
+}
