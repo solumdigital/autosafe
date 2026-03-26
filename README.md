@@ -1,7 +1,7 @@
 # AutoSafe Blindajes — Sitio Web (Wireframe Navegable)
 
 **Versión:** 1.0  
-**Última actualización:** Marzo 2025  
+**Última actualización:** Marzo 2026 
 **Desarrollado por:** Dirección de Marketing — AutoSafe Blindajes
 
 ---
