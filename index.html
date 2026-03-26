@@ -1,1464 +1,1681 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AutoSafe Blindajes — Wireframe Navegable</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoSafe Blindajes — Wireframe Navegable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      WIREFRAME BADGE
      ═══════════════════════════════════════════ -->
-<div class="wireframe-badge">⬡ Wireframe v1.0</div>
+  <div class="wireframe-badge">⬡ Wireframe v1.0</div>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      WHATSAPP BUTTON
      ═══════════════════════════════════════════ -->
-<a href="#" class="btn-whatsapp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="#" class="btn-whatsapp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      TOP BAR
      ═══════════════════════════════════════════ -->
-<div class="topbar">
-  <div class="container">
-    <div>
-      <i class="fa-solid fa-phone" style="margin-right:6px;"></i> +57 601 525 0125 &nbsp;|&nbsp;
-      <a href="mailto:blindajes@autosafe.com.co">blindajes@autosafe.com.co</a>
-    </div>
-    <div style="display:flex;align-items:center;gap:16px;">
-      <span>Lun – Vie: 8:00 AM – 5:00 PM</span>
-      <div class="topbar-social">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════
-     NAVBAR
-     ═══════════════════════════════════════════ -->
-<nav class="navbar">
-  <div class="container">
-    <a href="#" class="nav-logo" onclick="showPage('home')">
-      <img src="img/logo-black.svg" alt="AutoSafe Blindajes" class="nav-logo-img">
-    </a>
-    <div class="nav-links" id="navLinks">
-      <a href="#" onclick="showPage('home')" class="active" data-page="home">Inicio</a>
-      <a href="#" onclick="showPage('about')" data-page="about">Nosotros</a>
-      <a href="#" onclick="showPage('services')" data-page="services">Servicios</a>
-      <a href="#" onclick="showPage('blog')" data-page="blog">Blog</a>
-      <a href="#" onclick="showPage('payment')" data-page="payment">Pago en Línea</a>
-      <a href="#" onclick="showPage('contact')" data-page="contact">Contáctenos</a>
-      <a href="#" onclick="showPage('contact')" class="nav-cta">Cotizar <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i></a>
-    </div>
-    <button class="mobile-toggle" onclick="toggleMobileNav()"><i class="fa-solid fa-bars"></i></button>
-  </div>
-</nav>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: HOME
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page active" id="page-home">
-
-  <!-- HERO -->
-  <section class="hero">
-    <!-- Background slides -->
-    <div class="hero-slides">
-      <div class="hero-slide active" style="background-image:url('img/hero-slide-1.jpg');"></div>
-      <div class="hero-slide" style="background-image:url('img/hero-slide-2.jpg');"></div>
-      <div class="hero-slide" style="background-image:url('img/hero-slide-3.jpg');"></div>
-          <div class="hero-slide" style="background-image:url('img/hero-slide-4.jpg');"></div>
-    </div>
-
-    <!-- Kevlar pattern overlay -->
-    <div style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;pointer-events:none;
-      background-image:repeating-linear-gradient(45deg,transparent,transparent 12px,rgba(0,156,156,0.04) 12px,rgba(0,156,156,0.04) 14px);"></div>
-
-    <!-- Slide 1: Propuesta de valor -->
-    <div class="hero-content-slide active" data-slide="0">
-      <div class="container" style="position:relative;z-index:2;">
-        <div class="hero-content">
-          <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> Más de 20 Años de Experiencia</div>
-          <h1>Protección <em>Balística</em> de Clase Mundial</h1>
-          <p class="hero-slogan">Protegemos lo más preciado... La vida.</p>
-          <p>Blindaje certificado con tecnología alemana OEM, materiales Kevlar® y nuestro sistema exclusivo MAP Multi Angle Protection.</p>
-          <div class="hero-buttons">
-            <a href="#" class="btn btn-primary" onclick="showPage('contact')">Solicitar Cotización <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#" class="btn btn-secondary" onclick="showPage('services')">Conocer Servicios</a>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <div class="hero-stat-number">1.000+</div>
-              <div class="hero-stat-label">Vehículos Blindados</div>
-            </div>
-            <div>
-              <div class="hero-stat-number">20+</div>
-              <div class="hero-stat-label">Años de Experiencia</div>
-            </div>
-            <div>
-              <div class="hero-stat-number">4</div>
-              <div class="hero-stat-label">Países</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 2: Flota / Promoción -->
-    <div class="hero-content-slide" data-slide="1">
-      <div class="container" style="position:relative;z-index:2;">
-        <div class="hero-content">
-          <div class="hero-badge"><i class="fa-solid fa-car-side"></i> Todas las Marcas Premium</div>
-          <h1>Blindamos las Mejores <em>Marcas</em> del Mundo</h1>
-          <p class="hero-slogan">Toyota · BMW · Mercedes-Benz · Lexus · Audi</p>
-          <p>Trabajamos sobre los vehículos más reconocidos del mercado, garantizando acabados de fábrica y protección integral sin comprometer el confort.</p>
-          <div class="hero-buttons">
-            <a href="#" class="btn btn-gold" onclick="showPage('contact')">Cotizar Mi Vehículo <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="#" class="btn btn-secondary" onclick="showPage('blog')">Ver Galería de Marcas</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 3: Interior / Confort -->
-    <div class="hero-content-slide" data-slide="2">
-      <div class="container" style="position:relative;z-index:2;">
-        <div class="hero-content">
-          <div class="hero-badge"><i class="fa-solid fa-gem"></i> Confort y Seguridad</div>
-          <h1>Seguridad que No Se <em>Siente</em></h1>
-          <p class="hero-slogan">Protección invisible. Lujo intacto.</p>
-          <p>Nuestro blindaje preserva la experiencia original del vehículo. Interior, ergonomía y conducción se mantienen como de fábrica.</p>
-          <div class="hero-buttons">
-            <a href="#" class="btn btn-primary" onclick="showPage('contact')">Agendar una Cita <i class="fa-solid fa-calendar-check"></i></a>
-            <a href="#" class="btn btn-secondary" onclick="showPage('about')">Conocer Nuestro Proceso</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 4: Familia / Emocional -->
-    <div class="hero-content-slide" data-slide="3">
-      <div class="container" style="position:relative;z-index:2;">
-        <div class="hero-content">
-          <div class="hero-badge"><i class="fa-solid fa-heart-pulse"></i> Más de 1.000 Familias Protegidas</div>
-          <h1>Protegemos lo que Más <em>Importa</em></h1>
-          <p class="hero-slogan">Su tranquilidad. Su familia. Su vida.</p>
-          <p>Detrás de cada vehículo blindado hay una familia que llega segura a casa. Esa es nuestra misión desde hace más de 20 años.</p>
-          <div class="hero-buttons">
-            <a href="#" class="btn btn-primary" onclick="showPage('contact')">Proteja a su Familia Hoy <i class="fa-solid fa-shield-heart"></i></a>
-            <a href="#" class="btn btn-secondary" onclick="showPage('about')">Conozca Nuestra Historia</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slider dots -->
-    <div class="hero-dots">
-      <div class="hero-dot active" onclick="goToSlide(0)"></div>
-      <div class="hero-dot" onclick="goToSlide(1)"></div>
-      <div class="hero-dot" onclick="goToSlide(2)"></div>
-      <div class="hero-dot" onclick="goToSlide(3)"></div>
-    </div>
-  </section>
-
-  <!-- TRUST BAR -->
-  <section style="padding:32px 0; border-bottom:1px solid rgba(0,106,112,0.06);">
+  <div class="topbar">
     <div class="container">
-      <div class="trust-bar">
-        <div class="trust-logo">BMW</div>
-        <div class="trust-logo">Toyota</div>
-        <div class="trust-logo">Mercedes</div>
-        <div class="trust-logo">Lexus</div>
-        <div class="trust-logo">Jeep</div>
-        <div class="trust-logo">Audi</div>
-        <div class="trust-logo">VW</div>
-        <div class="trust-logo">Land Rover</div>
+      <div>
+        <i class="fa-solid fa-phone" style="margin-right:6px;"></i> +57 601 525 0125 &nbsp;|&nbsp;
+        <a href="mailto:blindajes@autosafe.com.co">blindajes@autosafe.com.co</a>
       </div>
-    </div>
-  </section>
-
-  <!-- ABOUT PREVIEW -->
-  <section class="section-pad kevlar-pattern">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
-        <div>
-          <div class="section-header">
-            <div class="overline">Acerca de AutoSafe</div>
-            <h2>Más de Dos Décadas <em>Protegiendo Vidas</em></h2>
-            <p>Parte de WBA Security Group, con presencia internacional en Colombia, México, Brasil y Alemania. Tecnología alemana, calidad colombiana.</p>
-          </div>
-          <div style="display:flex;gap:24px;margin-top:32px;">
-            <div style="text-align:center;">
-              <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇨🇴</div>
-              <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">Colombia</div>
-            </div>
-            <div style="text-align:center;">
-              <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇲🇽</div>
-              <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">México</div>
-            </div>
-            <div style="text-align:center;">
-              <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇧🇷</div>
-              <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">Brasil</div>
-            </div>
-            <div style="text-align:center;">
-              <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇩🇪</div>
-              <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">Alemania</div>
-            </div>
-          </div>
-          <a href="#" class="btn btn-outline" style="margin-top:32px;" onclick="showPage('about')">Conocer Nuestra Historia <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div style="height:400px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);">
-          <img src="img/workshop.jpg" alt="Planta AutoSafe — Taller de Blindaje" style="width:100%;height:100%;object-fit:cover;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="section-header text-center" style="max-width:600px;margin-left:auto;margin-right:auto;">
-        <div class="overline" style="justify-content:center;">Nuestros Servicios</div>
-        <h2>Soluciones Integrales de <em>Protección Balística</em></h2>
-        <p>Desde blindaje contra delincuencia urbana hasta proyectos especiales de alto riesgo. Cada solución, diseñada a su medida.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3>Blindaje de Vehículos</h3>
-          <p>Protección balística certificada en múltiples niveles, con tecnología alemana OEM y materiales Kevlar®.</p>
-          <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="fa-solid fa-wrench"></i></div>
-          <h3>Mantenimiento Blindados</h3>
-          <p>Servicio especializado de mantenimiento preventivo y correctivo para vehículos blindados de cualquier empresa.</p>
-          <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="fa-solid fa-glass-water"></i></div>
-          <h3>Safe Glass — Vidrio Antirrobo</h3>
-          <p>Protección contra robo con vidrio de seguridad reforzado. La solución más accesible del mercado.</p>
-          <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card">
-          <div class="service-card-icon"><i class="fa-solid fa-gear"></i></div>
-          <h3>Proyectos Especiales</h3>
-          <p>Blindaje arquitectónico, vehículos especiales, flotillas corporativas y soluciones personalizadas.</p>
-          <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="section-pad bg-midnight kevlar-pattern">
-    <div class="container">
-      <div class="section-header text-center" style="max-width:600px;margin-left:auto;margin-right:auto;">
-        <div class="overline" style="justify-content:center;">¿Por Qué Elegirnos?</div>
-        <h2>Su Seguridad Merece lo <em>Mejor</em></h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-certificate"></i></div>
-          <h3 style="color:var(--white);">Certificaciones Internacionales</h3>
-          <p style="color:rgba(255,255,255,0.5);">Homologaciones y certificados que avalan la calidad de cada proceso de blindaje.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
-          <h3 style="color:var(--white);">Servicio Personalizado</h3>
-          <p style="color:rgba(255,255,255,0.5);">Asesoría integral desde la evaluación de riesgo hasta la entrega y seguimiento postventa.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-tag"></i></div>
-          <h3 style="color:var(--white);">Precios Justos</h3>
-          <p style="color:rgba(255,255,255,0.5);">Inversión transparente y competitiva sin comprometer la calidad de los materiales.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-shield-heart"></i></div>
-          <h3 style="color:var(--white);">Garantía AutoSafe</h3>
-          <p style="color:rgba(255,255,255,0.5);">Respaldo completo con garantía extendida en blindaje, mecanismo y componentes.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="section-header">
-        <div class="overline">Testimonios</div>
-        <h2>Lo Que Dicen Nuestros <em>Clientes</em></h2>
-      </div>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"El proceso fue completamente transparente. Me entregaron el vehículo en el tiempo acordado y el nivel de acabado es impecable."</p>
-          <div class="review-author">
-            <div class="review-avatar">JR</div>
-            <div class="review-author-info">
-              <strong>Juan R.</strong>
-              <span>Empresario — Bogotá</span>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Llevamos blindando nuestra flota con AutoSafe hace 5 años. La atención postventa y el mantenimiento son de primer nivel."</p>
-          <div class="review-author">
-            <div class="review-avatar">MC</div>
-            <div class="review-author-info">
-              <strong>María C.</strong>
-              <span>Directora de Seguridad — Multinacional</span>
-            </div>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Me preocupaba que el blindaje cambiara la conducción del vehículo. Con AutoSafe, la diferencia es prácticamente imperceptible."</p>
-          <div class="review-author">
-            <div class="review-avatar">AP</div>
-            <div class="review-author-info">
-              <strong>Andrés P.</strong>
-              <span>Ejecutivo — Medellín</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section class="section-pad bg-light">
-    <div class="container text-center">
-      <div class="section-header text-center" style="max-width:500px;margin-left:auto;margin-right:auto;">
-        <div class="overline" style="justify-content:center;">Certificaciones</div>
-        <h2>Respaldo <em>Internacional</em></h2>
-      </div>
-      <div class="trust-bar">
-        <div class="trust-logo" style="width:120px;">CERT 1</div>
-        <div class="trust-logo" style="width:120px;">CERT 2</div>
-        <div class="trust-logo" style="width:120px;">ISO</div>
-        <div class="trust-logo" style="width:120px;">SVSP</div>
-        <div class="trust-logo" style="width:120px;">WBA</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="cta-banner">
-        <div>
-          <h2>¿Listo para Proteger lo que <em>Más Importa</em>?</h2>
-          <p>Solicite una cotización personalizada sin compromiso. Respuesta en menos de 24 horas.</p>
-        </div>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;">
-          <a href="#" class="btn btn-gold" onclick="showPage('contact')">Solicitar Cotización</a>
-          <a href="#" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: ABOUT
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-about">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Nuestra Empresa</div>
-      <h1>Acerca de <em>AutoSafe</em></h1>
-      <p>Más de dos décadas protegiendo vidas con tecnología de vanguardia y compromiso inquebrantable.</p>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Acerca de AutoSafe</div>
-    </div>
-  </div>
-
-  <!-- History -->
-  <section class="section-pad">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;">
-        <div>
-          <div class="section-header">
-            <div class="overline">Nuestra Historia</div>
-            <h2>De Colombia para <em>el Mundo</em></h2>
-            <p>Desde nuestra fundación, AutoSafe ha sido pionero en la industria del blindaje vehicular en América Latina.</p>
-          </div>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-year">2003</div>
-              <h3>Fundación en Colombia</h3>
-              <p>Inicio de operaciones en Bogotá con un enfoque en protección balística de calidad premium.</p>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-year">2008</div>
-              <h3>Expansión a México</h3>
-              <p>Apertura de AutoSafe México para atender la creciente demanda del mercado centroamericano.</p>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-year">2014</div>
-              <h3>Presencia en Brasil</h3>
-              <p>Consolidación en el mercado sudamericano con operaciones en São Paulo.</p>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-year">2020</div>
-              <h3>Alianza con Tecnología Alemana</h3>
-              <p>Incorporación de tecnología OEM alemana y componentes de clase mundial.</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="img-placeholder" style="height:400px;margin-bottom:24px;">
-            <i class="fa-solid fa-images"></i>
-            Galería — Historia AutoSafe
-          </div>
-          <div class="presence-grid">
-            <div class="presence-card">
-              <div class="presence-flag">🇨🇴</div>
-              <h3>Colombia</h3>
-              <p>Sede principal — Bogotá D.C.</p>
-            </div>
-            <div class="presence-card">
-              <div class="presence-flag">🇲🇽</div>
-              <h3>México</h3>
-              <p>Operaciones LATAM Norte</p>
-            </div>
-            <div class="presence-card">
-              <div class="presence-flag">🇧🇷</div>
-              <h3>Brasil</h3>
-              <p>Mercado sudamericano</p>
-            </div>
-            <div class="presence-card">
-              <div class="presence-flag">🇩🇪</div>
-              <h3>Alemania</h3>
-              <p>Tecnología y certificación</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mission -->
-  <section class="section-pad bg-light kevlar-pattern">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;">
-        <div style="background:var(--white);border-radius:var(--radius);padding:48px;box-shadow:var(--shadow-sm);">
-          <div style="font-size:48px;margin-bottom:16px;">🎯</div>
-          <h3 style="font-size:22px;margin-bottom:16px;">Nuestra Misión</h3>
-          <p style="color:var(--mid-gray);line-height:1.8;">Proteger la vida y la tranquilidad de nuestros clientes mediante soluciones de blindaje vehicular de clase mundial, con materiales certificados, tecnología de punta y un servicio que supere todas las expectativas.</p>
-        </div>
-        <div style="background:var(--white);border-radius:var(--radius);padding:48px;box-shadow:var(--shadow-sm);">
-          <div style="font-size:48px;margin-bottom:16px;">👁</div>
-          <h3 style="font-size:22px;margin-bottom:16px;">Nuestra Visión</h3>
-          <p style="color:var(--mid-gray);line-height:1.8;">Consolidarnos como la empresa líder en protección balística vehicular en América Latina, reconocida por la excelencia de nuestros procesos, la innovación constante y el compromiso con la vida.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us (detail) -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="section-header text-center" style="max-width:600px;margin-left:auto;margin-right:auto;">
-        <div class="overline" style="justify-content:center;">Diferenciadores</div>
-        <h2>¿Por Qué <em>AutoSafe</em>?</h2>
-      </div>
-      <div class="why-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
-        <div style="background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);">
-          <div style="font-size:32px;margin-bottom:16px;">🔬</div>
-          <h3>Tecnología Alemana OEM</h3>
-          <p style="font-size:14px;color:var(--mid-gray);margin-top:8px;">Componentes originales de fábrica que garantizan integración perfecta con el vehículo.</p>
-        </div>
-        <div style="background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);">
-          <div style="font-size:32px;margin-bottom:16px;">🛡</div>
-          <h3>Sistema MAP®</h3>
-          <p style="font-size:14px;color:var(--mid-gray);margin-top:8px;">Multi Angle Protection: protección en ángulos no convencionales para seguridad total.</p>
-        </div>
-        <div style="background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);">
-          <div style="font-size:32px;margin-bottom:16px;">📋</div>
-          <h3>Certificaciones</h3>
-          <p style="font-size:14px;color:var(--mid-gray);margin-top:8px;">Homologación ante la Superintendencia de Vigilancia y Seguridad Privada, normas internacionales.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section-pad bg-light">
-    <div class="container">
-      <div class="cta-banner">
-        <div>
-          <h2>Confíe en Quienes <em>Protegen Vidas</em></h2>
-          <p>Agende una visita a nuestra planta y conozca nuestros procesos de primera mano.</p>
-        </div>
-        <a href="#" class="btn btn-gold" onclick="showPage('contact')">Agendar Visita</a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: SERVICES
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-services">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Portafolio</div>
-      <h1>Nuestros <em>Servicios</em></h1>
-      <p>Soluciones completas de protección balística y seguridad vehicular para cada necesidad.</p>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Servicios</div>
-    </div>
-  </div>
-
-  <section class="section-pad">
-    <div class="container">
-
-      <!-- Blindaje -->
-      <div class="service-detail">
-        <div>
-          <div style="display:inline-block;background:rgba(0,156,156,0.1);color:var(--dark-cyan);font-family:var(--font-display);font-weight:700;font-size:11px;padding:6px 14px;border-radius:50px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Servicio Principal</div>
-          <h3>Blindaje de Vehículos</h3>
-          <p>Protección balística integral con tecnología alemana OEM, materiales Kevlar® y el exclusivo sistema MAP Multi Angle Protection. Trabajamos sobre todas las marcas premium y de alta gama.</p>
-          <div class="service-levels">
-            <span class="service-level"><i class="fa-solid fa-shield-halved"></i> Anti Delincuencia Urbana</span>
-            <span class="service-level"><i class="fa-solid fa-shield-halved"></i> Anti Crimen Organizado</span>
-            <span class="service-level"><i class="fa-solid fa-shield-halved"></i> Alto Riesgo / Antiterrorismo</span>
-          </div>
-          <a href="#" class="btn btn-primary" style="margin-top:24px;" onclick="showPage('contact')">Cotizar Blindaje</a>
-        </div>
-        <div class="img-placeholder" style="height:360px;">
-          <i class="fa-solid fa-car-side"></i>
-          Imagen — Vehículo Blindado<br><small>Proceso de blindaje / resultado final</small>
-        </div>
-      </div>
-
-      <!-- Mantenimiento -->
-      <div class="service-detail">
-        <div>
-          <h3>Mantenimiento de Vehículos Blindados</h3>
-          <p>Servicio especializado de mantenimiento preventivo y correctivo. Atendemos vehículos blindados por cualquier empresa. Técnicos certificados, repuestos originales y tiempos de respuesta garantizados.</p>
-          <p><strong style="color:var(--dark-cyan);">¿Su vehículo fue blindado en otra empresa?</strong> También lo mantenemos con los más altos estándares.</p>
-          <a href="#" class="btn btn-outline" style="margin-top:16px;" onclick="showPage('contact')">Agendar Mantenimiento</a>
-        </div>
-        <div class="img-placeholder" style="height:360px;">
-          <i class="fa-solid fa-wrench"></i>
-          Imagen — Taller de Mantenimiento
-        </div>
-      </div>
-
-      <!-- Safe Glass -->
-      <div class="service-detail">
-        <div>
-          <h3>Safe Glass — Vidrio Antirrobo</h3>
-          <p>Protección contra robo y asalto mediante vidrio de seguridad laminado reforzado. La solución más accesible para quienes buscan un primer nivel de protección sin blindaje completo.</p>
-          <a href="#" class="btn btn-outline" style="margin-top:16px;" onclick="showPage('contact')">Solicitar Información</a>
-        </div>
-        <div class="img-placeholder" style="height:360px;">
-          <i class="fa-solid fa-glass-water"></i>
-          Imagen — Vidrio Safe Glass
-        </div>
-      </div>
-
-      <!-- Proyectos Especiales -->
-      <div class="service-detail">
-        <div>
-          <h3>Proyectos Especiales de Blindaje</h3>
-          <p>Soluciones a medida para necesidades únicas: blindaje arquitectónico, vehículos especiales de transporte, flotillas corporativas, embajadas y edificaciones críticas.</p>
-          <a href="#" class="btn btn-outline" style="margin-top:16px;" onclick="showPage('contact')">Consultar Proyecto</a>
-        </div>
-        <div class="img-placeholder" style="height:360px;">
-          <i class="fa-solid fa-gear"></i>
-          Imagen — Proyectos Especiales
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section-pad bg-light">
-    <div class="container">
-      <div class="cta-banner">
-        <div>
-          <h2>Cada Necesidad Tiene una <em>Solución</em></h2>
-          <p>Cuéntenos su caso y diseñamos la protección ideal para usted.</p>
-        </div>
-        <a href="#" class="btn btn-gold" onclick="showPage('contact')">Hablar con un Asesor</a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: BLOG
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-blog">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Contenido</div>
-      <h1>Blog, Casos de Éxito y <em>Galería</em></h1>
-      <p>Noticias, artículos educativos y el portafolio de marcas que hemos blindado.</p>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Blog</div>
-    </div>
-  </div>
-
-  <!-- Articles -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="section-header">
-        <div class="overline">Artículos Destacados</div>
-        <h2>Aprenda Sobre <em>Blindaje</em></h2>
-      </div>
-      <div class="blog-grid">
-        <div class="blog-card">
-          <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
-            <i class="fa-solid fa-newspaper"></i>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-tag">Educación</span>
-            <h3><a href="#" onclick="showPage('article')" style="color:inherit;">¿Qué es el blindaje vehicular y cómo funciona?</a></h3>
-            <p>Guía completa sobre los fundamentos del blindaje, niveles de protección y materiales utilizados.</p>
-            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Mar 15, 2025</span><span><i class="fa-regular fa-clock"></i> 8 min lectura</span></div>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
-            <i class="fa-solid fa-newspaper"></i>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-tag">Seguridad</span>
-            <h3>5 Mitos sobre los Vehículos Blindados</h3>
-            <p>Desmontamos las creencias más comunes sobre peso, consumo y conducción de vehículos blindados.</p>
-            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 28, 2025</span><span><i class="fa-regular fa-clock"></i> 5 min lectura</span></div>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
-            <i class="fa-solid fa-newspaper"></i>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-tag">Mantenimiento</span>
-            <h3>Mantenimiento Preventivo: Claves para su Blindado</h3>
-            <p>Por qué el mantenimiento especializado es crucial para la vida útil de su vehículo blindado.</p>
-            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 10, 2025</span><span><i class="fa-regular fa-clock"></i> 6 min lectura</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Success Cases -->
-  <section class="section-pad bg-light">
-    <div class="container">
-      <div class="section-header">
-        <div class="overline">Portafolio</div>
-        <h2>Casos de <em>Éxito</em></h2>
-      </div>
-      <div class="blog-grid">
-        <div class="blog-card">
-          <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
-            <i class="fa-solid fa-trophy"></i>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-tag" style="background:rgba(200,168,75,0.15);color:var(--gold);">Caso de Éxito</span>
-            <h3><a href="#" onclick="showPage('case')" style="color:inherit;">Blindaje de Flota Corporativa — Multinacional</a></h3>
-            <p>12 vehículos blindados nivel III+ para la flota ejecutiva de una multinacional en Colombia.</p>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
-            <i class="fa-solid fa-trophy"></i>
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-tag" style="background:rgba(200,168,75,0.15);color:var(--gold);">Caso de Éxito</span>
-            <h3>Proyecto Especial — Entidad Gubernamental</h3>
-            <p>Solución integral de blindaje para vehículos de transporte de funcionarios de alto perfil.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Brand Gallery -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="section-header">
-        <div class="overline">Galería</div>
-        <h2>Marcas que <em>Blindamos</em></h2>
-      </div>
-      <div class="brand-gallery">
-        <div class="brand-tile">Toyota</div>
-        <div class="brand-tile">BMW</div>
-        <div class="brand-tile">Mercedes-Benz</div>
-        <div class="brand-tile">Chevrolet</div>
-        <div class="brand-tile">Lexus</div>
-        <div class="brand-tile">Jeep</div>
-        <div class="brand-tile">Audi</div>
-        <div class="brand-tile">Volkswagen</div>
-        <div class="brand-tile">Land Rover</div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: BLOG ARTICLE TEMPLATE
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-article">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Blog</div>
-      <h1>¿Qué es el Blindaje Vehicular y <em>Cómo Funciona</em>?</h1>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#" onclick="showPage('blog')">Blog</a> / ¿Qué es el Blindaje Vehicular?</div>
-    </div>
-  </div>
-
-  <section class="section-pad">
-    <div class="container">
-      <div class="article-layout">
-        <!-- Main Content -->
-        <div class="article-body">
-          <!-- Featured Image -->
-          <div class="article-featured-img">
-            <div class="img-placeholder" style="height:380px;border-radius:0;border:none;min-height:0;">
-              <i class="fa-solid fa-image"></i>
-              Imagen Destacada del Artículo<br><small>1200 × 630px recomendado</small>
-            </div>
-          </div>
-
-          <!-- Meta Bar -->
-          <div class="article-meta-bar">
-            <div class="article-author">
-              <div class="article-author-avatar">AS</div>
-              <div>
-                <strong style="font-size:13px;display:block;">AutoSafe Blindajes</strong>
-                <span style="font-size:11px;color:var(--mid-gray);">Equipo Editorial</span>
-              </div>
-            </div>
-            <div class="article-meta-item"><i class="fa-regular fa-calendar"></i> Marzo 15, 2025</div>
-            <div class="article-meta-item"><i class="fa-regular fa-clock"></i> 8 min lectura</div>
-            <div class="article-meta-item"><span class="blog-tag" style="margin:0;">Educación</span></div>
-            <div class="article-share">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-
-          <!-- Article Content -->
-          <p><strong>El blindaje vehicular es un proceso de ingeniería especializada</strong> que refuerza la estructura de un vehículo con materiales balísticos certificados, capaces de resistir impactos de proyectiles de armas de fuego y otros elementos de agresión. En Colombia, donde la seguridad personal es una prioridad creciente, entender este proceso es fundamental para tomar decisiones informadas.</p>
-
-          <h2>¿Cómo funciona el blindaje?</h2>
-          <p>El proceso consiste en instalar capas de materiales de protección balística en las áreas críticas del vehículo: puertas, techo, piso, pilares, vidrios y componentes del motor. Estos materiales incluyen acero balístico, fibras aramídicas (como Kevlar®), y vidrio laminado multicapa.</p>
-          <p>En AutoSafe utilizamos nuestro sistema exclusivo MAP (Multi Angle Protection), que garantiza protección en ángulos no convencionales donde otros sistemas presentan vulnerabilidades.</p>
-
-          <blockquote>"Un blindaje de calidad no se nota. El vehículo debe verse, sentirse y conducirse como salió de fábrica."</blockquote>
-
-          <h2>Niveles de protección</h2>
-          <p>Los niveles de blindaje se clasifican según la amenaza que pueden resistir. En Colombia, los niveles más comunes son:</p>
-          <ul>
-            <li><strong>Nivel II / II-A:</strong> Protección contra armas cortas de bajo calibre. Ideal para delincuencia urbana común.</li>
-            <li><strong>Nivel III:</strong> Resistencia a armas cortas de alto calibre y subametralladoras. El nivel más solicitado en Colombia.</li>
-            <li><strong>Nivel III+ / IV:</strong> Protección contra rifles de asalto. Recomendado para alto riesgo y crimen organizado.</li>
-            <li><strong>Nivel V+:</strong> Protección contra armamento militar. Para proyectos gubernamentales y antiterrorismo.</li>
-          </ul>
-
-          <h2>Materiales utilizados</h2>
-          <p>La calidad del blindaje depende directamente de los materiales empleados. En AutoSafe trabajamos con tecnología alemana OEM y componentes de grado militar, incluyendo Kevlar® de DuPont, acero balístico certificado, y vidrio laminado con capas de policarbonato.</p>
-
-          <div class="img-placeholder" style="height:280px;margin:24px 0;">
-            <i class="fa-solid fa-image"></i>
-            Imagen — Materiales de blindaje / Proceso<br><small>1200 × 500px</small>
-          </div>
-
-          <h2>¿Cuánto tiempo toma el proceso?</h2>
-          <p>El tiempo de blindaje varía según el nivel de protección y el modelo del vehículo. En promedio, un blindaje completo toma entre 4 y 8 semanas. Durante este período, el vehículo pasa por más de 15 estaciones de trabajo especializadas.</p>
-
-          <h2>¿El blindaje afecta la conducción?</h2>
-          <p>Un blindaje de calidad profesional no debe alterar significativamente la experiencia de conducción. En AutoSafe, reforzamos la suspensión, frenos y componentes mecánicos para compensar el peso adicional del blindaje, garantizando una conducción segura y confortable.</p>
-
-          <!-- CTA -->
-          <div class="cta-banner" style="margin-top:40px;">
-            <div>
-              <h2 style="font-size:22px;">¿Tiene Preguntas sobre <em>Blindaje</em>?</h2>
-              <p>Nuestros asesores están listos para guiarle en la mejor solución de protección.</p>
-            </div>
-            <a href="#" class="btn btn-gold" onclick="showPage('contact')">Solicitar Asesoría</a>
-          </div>
-
-          <!-- Navigation -->
-          <div class="article-nav">
-            <a href="#" onclick="showPage('blog')"><i class="fa-solid fa-arrow-left"></i> Volver al Blog</a>
-            <a href="#" onclick="showPage('blog')">Siguiente Artículo <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Sidebar -->
-        <aside class="article-sidebar">
-          <!-- CTA Card -->
-          <div class="sidebar-card" style="background:linear-gradient(135deg,var(--midnight),var(--jet));color:var(--white);border:none;">
-            <h4 style="color:var(--celeste);border-color:rgba(184,236,229,0.2);">¿Listo para Protegerse?</h4>
-            <p style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:16px;">Solicite una cotización personalizada sin compromiso.</p>
-            <a href="#" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;" onclick="showPage('contact')">Cotizar Ahora</a>
-          </div>
-
-          <!-- Related Articles -->
-          <div class="sidebar-card">
-            <h4>Artículos Relacionados</h4>
-            <div class="sidebar-related" onclick="showPage('blog')">
-              <div class="sidebar-related-thumb"><i class="fa-solid fa-newspaper"></i></div>
-              <div class="sidebar-related-text">
-                <h5>5 Mitos sobre Vehículos Blindados</h5>
-                <span>5 min · Seguridad</span>
-              </div>
-            </div>
-            <div class="sidebar-related" onclick="showPage('blog')">
-              <div class="sidebar-related-thumb"><i class="fa-solid fa-newspaper"></i></div>
-              <div class="sidebar-related-text">
-                <h5>Mantenimiento Preventivo: Claves para su Blindado</h5>
-                <span>6 min · Mantenimiento</span>
-              </div>
-            </div>
-            <div class="sidebar-related" onclick="showPage('blog')">
-              <div class="sidebar-related-thumb"><i class="fa-solid fa-newspaper"></i></div>
-              <div class="sidebar-related-text">
-                <h5>Niveles de Blindaje: Guía Completa</h5>
-                <span>7 min · Educación</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Categories -->
-          <div class="sidebar-card">
-            <h4>Categorías</h4>
-            <div style="display:flex;flex-wrap:wrap;gap:8px;">
-              <span class="blog-tag" style="cursor:pointer;">Educación</span>
-              <span class="blog-tag" style="cursor:pointer;">Seguridad</span>
-              <span class="blog-tag" style="cursor:pointer;">Mantenimiento</span>
-              <span class="blog-tag" style="cursor:pointer;">Tecnología</span>
-              <span class="blog-tag" style="cursor:pointer;">Casos de Éxito</span>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: CASE STUDY TEMPLATE
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-case">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Caso de Éxito</div>
-      <h1>Blindaje de Flota Corporativa — <em>Multinacional</em></h1>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#" onclick="showPage('blog')">Blog</a> / Caso de Éxito: Flota Corporativa</div>
-    </div>
-  </div>
-
-  <section class="section-pad">
-    <div class="container">
-      <div class="article-layout">
-        <!-- Main Content -->
-        <div class="article-body">
-          <!-- Featured Image -->
-          <div class="article-featured-img">
-            <div class="img-placeholder" style="height:380px;border-radius:0;border:none;min-height:0;">
-              <i class="fa-solid fa-trophy"></i>
-              Imagen Destacada — Caso de Éxito<br><small>1200 × 630px recomendado</small>
-            </div>
-          </div>
-
-          <!-- Key Stats -->
-          <div class="case-hero-stats">
-            <div class="case-stat">
-              <div class="case-stat-number">12</div>
-              <div class="case-stat-label">Vehículos Blindados</div>
-            </div>
-            <div class="case-stat">
-              <div class="case-stat-number">III+</div>
-              <div class="case-stat-label">Nivel de Protección</div>
-            </div>
-            <div class="case-stat">
-              <div class="case-stat-number">6</div>
-              <div class="case-stat-label">Semanas por Vehículo</div>
-            </div>
-          </div>
-
-          <!-- Meta Bar -->
-          <div class="article-meta-bar">
-            <div class="article-meta-item"><i class="fa-solid fa-building"></i> Sector Corporativo</div>
-            <div class="article-meta-item"><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</div>
-            <div class="article-meta-item"><i class="fa-regular fa-calendar"></i> 2024</div>
-            <div class="article-meta-item"><span class="blog-tag" style="margin:0;background:rgba(200,168,75,0.15);color:var(--gold);">Caso de Éxito</span></div>
-            <div class="article-share">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-
-          <!-- Content -->
-          <h2>El Desafío</h2>
-          <p>Una multinacional con operaciones en Colombia necesitaba blindar su flota de 12 vehículos ejecutivos para proteger a sus directivos y altos funcionarios que se desplazan frecuentemente entre Bogotá, Medellín y la región del Magdalena Medio. El requerimiento incluía nivel de protección III+ contra armas cortas de alto calibre, con la condición de que el blindaje no alterara significativamente la estética ni la conducción de los vehículos.</p>
-
-          <h2>La Solución AutoSafe</h2>
-          <p>Diseñamos un plan integral de blindaje que incluyó:</p>
-          <ul>
-            <li>Evaluación de riesgo personalizada para cada ruta y perfil de ejecutivo.</li>
-            <li>Blindaje nivel III+ con sistema MAP Multi Angle Protection en los 12 vehículos (Toyota Land Cruiser y BMW X5).</li>
-            <li>Refuerzo de suspensión y sistema de frenado para compensar el peso adicional.</li>
-            <li>Programa de mantenimiento preventivo trimestral para toda la flota.</li>
-            <li>Capacitación al equipo de conductores en protocolos de seguridad con vehículos blindados.</li>
-          </ul>
-
-          <!-- Gallery -->
-          <h2>Galería del Proyecto</h2>
-          <div class="case-gallery">
-            <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
-            <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
-            <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
-            <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
-            <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
-            <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
-          </div>
-
-          <h2>Los Resultados</h2>
-          <p>Entregamos los 12 vehículos en un plazo de 16 semanas, cumpliendo con los estándares de calidad y los tiempos pactados. El cliente reportó una satisfacción del 100% en la calidad de acabados, y extendió el contrato de mantenimiento por 3 años adicionales.</p>
-
-          <blockquote>"AutoSafe entendió nuestras necesidades desde el primer día. La calidad del blindaje y la atención postventa superaron nuestras expectativas. Ya llevamos 3 años renovando el contrato."<br><strong style="font-style:normal;font-size:14px;color:var(--mid-gray);display:block;margin-top:8px;">— Director de Seguridad Corporativa</strong></blockquote>
-
-          <!-- CTA -->
-          <div class="cta-banner" style="margin-top:40px;">
-            <div>
-              <h2 style="font-size:22px;">¿Necesita Blindar su <em>Flota Corporativa</em>?</h2>
-              <p>Diseñamos soluciones a medida para empresas e instituciones.</p>
-            </div>
-            <a href="#" class="btn btn-gold" onclick="showPage('contact')">Cotizar Flota</a>
-          </div>
-
-          <!-- Navigation -->
-          <div class="article-nav">
-            <a href="#" onclick="showPage('blog')"><i class="fa-solid fa-arrow-left"></i> Volver a Casos de Éxito</a>
-            <a href="#" onclick="showPage('blog')">Siguiente Caso <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Sidebar -->
-        <aside class="article-sidebar">
-          <!-- Project Info -->
-          <div class="sidebar-card">
-            <h4>Ficha del Proyecto</h4>
-            <div style="font-size:14px;">
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);"><span style="color:var(--mid-gray);">Cliente</span><strong>Multinacional</strong></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);"><span style="color:var(--mid-gray);">Sector</span><strong>Corporativo</strong></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);"><span style="color:var(--mid-gray);">Ubicación</span><strong>Colombia</strong></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);"><span style="color:var(--mid-gray);">Vehículos</span><strong>12 unidades</strong></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);"><span style="color:var(--mid-gray);">Nivel</span><strong>III+</strong></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);"><span style="color:var(--mid-gray);">Marcas</span><strong>Toyota · BMW</strong></div>
-              <div style="display:flex;justify-content:space-between;padding:10px 0;"><span style="color:var(--mid-gray);">Duración</span><strong>16 semanas</strong></div>
-            </div>
-          </div>
-
-          <!-- CTA -->
-          <div class="sidebar-card" style="background:linear-gradient(135deg,var(--midnight),var(--jet));color:var(--white);border:none;">
-            <h4 style="color:var(--celeste);border-color:rgba(184,236,229,0.2);">¿Proyecto Similar?</h4>
-            <p style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:16px;">Cuéntenos su caso y diseñamos la solución ideal.</p>
-            <a href="#" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;" onclick="showPage('contact')">Hablar con un Asesor</a>
-          </div>
-
-          <!-- Other Cases -->
-          <div class="sidebar-card">
-            <h4>Otros Casos de Éxito</h4>
-            <div class="sidebar-related" onclick="showPage('blog')">
-              <div class="sidebar-related-thumb" style="background:rgba(200,168,75,0.1);color:var(--gold);"><i class="fa-solid fa-trophy"></i></div>
-              <div class="sidebar-related-text">
-                <h5>Proyecto Especial — Entidad Gubernamental</h5>
-                <span>Alto Riesgo · 2024</span>
-              </div>
-            </div>
-            <div class="sidebar-related" onclick="showPage('blog')">
-              <div class="sidebar-related-thumb" style="background:rgba(200,168,75,0.1);color:var(--gold);"><i class="fa-solid fa-trophy"></i></div>
-              <div class="sidebar-related-text">
-                <h5>Blindaje VIP — Familia Empresaria</h5>
-                <span>Nivel III · 2023</span>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: PAYMENT
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-payment">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Transacciones</div>
-      <h1>Pago <em>en Línea</em></h1>
-      <p>Realice pagos seguros de anticipos, abonos y saldos de forma rápida y confiable.</p>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Pago en Línea</div>
-    </div>
-  </div>
-
-  <section class="section-pad">
-    <div class="container" style="max-width:800px;">
-      <div class="section-header text-center" style="margin-left:auto;margin-right:auto;">
-        <div class="overline" style="justify-content:center;">Métodos de Pago</div>
-        <h2>Elija su Método <em>Preferido</em></h2>
-        <p>Todas las transacciones están protegidas con encriptación de grado bancario.</p>
-      </div>
-      <div class="payment-methods">
-        <div class="payment-card">
-          <div class="payment-icon"><i class="fa-solid fa-building-columns"></i></div>
-          <h3>PSE</h3>
-          <p>Transferencia bancaria directa desde su cuenta de ahorros o corriente.</p>
-        </div>
-        <div class="payment-card">
-          <div class="payment-icon"><i class="fa-brands fa-paypal"></i></div>
-          <h3>PayPal</h3>
-          <p>Pagos internacionales seguros con protección al comprador.</p>
-        </div>
-        <div class="payment-card">
-          <div class="payment-icon"><i class="fa-solid fa-credit-card"></i></div>
-          <h3>Tarjeta de Crédito</h3>
-          <p>Visa, Mastercard, American Express. Hasta 36 cuotas disponibles.</p>
-        </div>
-      </div>
-
-      <!-- Payment Form placeholder -->
-      <div style="margin-top:48px;background:var(--light-gray);border-radius:var(--radius);padding:48px;text-align:center;">
-        <i class="fa-solid fa-lock" style="font-size:36px;color:var(--dark-cyan);margin-bottom:16px;"></i>
-        <h3 style="margin-bottom:8px;">Módulo de Pago Seguro</h3>
-        <p style="color:var(--mid-gray);font-size:14px;max-width:400px;margin:0 auto;">Aquí se integrará la pasarela de pago (PlacetoPay / PayU / Stripe). Formulario con referencia, monto y datos de facturación.</p>
-        <div style="display:flex;gap:12px;justify-content:center;margin-top:24px;">
-          <div class="form-group" style="margin:0;width:260px;">
-            <input type="text" placeholder="Número de referencia" disabled>
-          </div>
-          <div class="form-group" style="margin:0;width:180px;">
-            <input type="text" placeholder="Monto $" disabled>
-          </div>
-          <button class="btn btn-primary btn-sm" disabled>Pagar</button>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: CONTACT
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-contact">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Conversemos</div>
-      <h1>Contáctenos</h1>
-      <p>Estamos listos para asesorarle. Solicite su cotización o agende una visita.</p>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Contáctenos</div>
-    </div>
-  </div>
-
-  <section class="section-pad">
-    <div class="container">
-      <div class="contact-grid">
-        <!-- Form -->
-        <div>
-          <div class="section-header" style="margin-bottom:32px;">
-            <div class="overline">Cotización</div>
-            <h2>Solicite su <em>Cotización</em></h2>
-          </div>
-          <form onsubmit="return false;">
-            <div class="form-row">
-              <div class="form-group">
-                <label>Nombre completo *</label>
-                <input type="text" placeholder="Juan Pérez">
-              </div>
-              <div class="form-group">
-                <label>Teléfono *</label>
-                <input type="tel" placeholder="+57 300 000 0000">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label>Correo electrónico *</label>
-                <input type="email" placeholder="ejemplo@correo.com">
-              </div>
-              <div class="form-group">
-                <label>Ciudad</label>
-                <input type="text" placeholder="Bogotá">
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Servicio de interés *</label>
-              <select>
-                <option>Seleccione un servicio...</option>
-                <option>Blindaje de vehículos</option>
-                <option>Mantenimiento de vehículo blindado</option>
-                <option>Safe Glass — Vidrio antirrobo</option>
-                <option>Proyecto especial</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label>Marca del vehículo</label>
-                <select>
-                  <option>Seleccione...</option>
-                  <option>Toyota</option>
-                  <option>BMW</option>
-                  <option>Mercedes-Benz</option>
-                  <option>Lexus</option>
-                  <option>Jeep</option>
-                  <option>Audi</option>
-                  <option>Chevrolet</option>
-                  <option>Volkswagen</option>
-                  <option>Land Rover</option>
-                  <option>Otra</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Modelo / Año</label>
-                <input type="text" placeholder="LC 300 / 2025">
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Mensaje o especificaciones adicionales</label>
-              <textarea placeholder="Cuéntenos más sobre sus necesidades de protección..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-              <i class="fa-solid fa-paper-plane"></i> Enviar Solicitud
-            </button>
-            <p style="font-size:12px;color:var(--mid-gray);margin-top:12px;text-align:center;">Al enviar acepta nuestra <a href="#" onclick="showPage('privacy')" style="color:var(--dark-cyan);">Política de Privacidad</a>.</p>
-          </form>
-        </div>
-
-        <!-- Info -->
-        <div>
-          <div class="section-header" style="margin-bottom:32px;">
-            <div class="overline">Información</div>
-            <h2>Datos de <em>Contacto</em></h2>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div>
-              <h4>Dirección</h4>
-              <p>Calle 134D # 53 – 43, Bodega 3<br>Bogotá D.C., Colombia</p>
-            </div>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
-            <div>
-              <h4>Teléfonos</h4>
-              <p>+57 601 525 0125<br>+57 317 719 8548</p>
-            </div>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
-            <div>
-              <h4>Correo</h4>
-              <p>blindajes@autosafe.com.co</p>
-            </div>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
-            <div>
-              <h4>Horarios</h4>
-              <p>Lunes a Viernes: 8:00 AM – 5:00 PM<br>Sábados: 8:00 AM – 12:00 PM</p>
-            </div>
-          </div>
-
-          <h4 style="font-family:var(--font-display);font-weight:700;margin-top:32px;margin-bottom:16px;">Redes Sociales</h4>
-          <div style="display:flex;gap:12px;">
-            <a href="#" style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" style="width:44px;height:44px;border-radius:50%;background:rgba(37,211,102,0.1);display:flex;align-items:center;justify-content:center;color:#25D366;font-size:18px;"><i class="fa-brands fa-whatsapp"></i></a>
-          </div>
-
-          <div class="map-placeholder">
-            <i class="fa-solid fa-map-location-dot" style="font-size:36px;opacity:0.4;"></i>
-            Google Maps — Calle 134D # 53–43, Bogotá
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Legal -->
-  <section class="section-pad bg-light">
-    <div class="container" style="max-width:800px;">
-      <div class="section-header text-center" style="margin-left:auto;margin-right:auto;">
-        <div class="overline" style="justify-content:center;">Legal</div>
-        <h2>Información <em>Legal</em></h2>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-        <a href="#" onclick="showPage('privacy')" style="display:block;background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);cursor:pointer;transition:var(--transition);border:1px solid rgba(0,106,112,0.06);">
-          <h4 style="font-size:16px;margin-bottom:8px;"><i class="fa-solid fa-file-shield" style="color:var(--dark-cyan);margin-right:8px;"></i>Aviso de Privacidad</h4>
-          <p style="font-size:13px;color:var(--mid-gray);">Conozca cómo protegemos y tratamos sus datos personales conforme a la Ley 1581 de 2012.</p>
-        </a>
-        <a href="#" onclick="showPage('terms')" style="display:block;background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);cursor:pointer;transition:var(--transition);border:1px solid rgba(0,106,112,0.06);">
-          <h4 style="font-size:16px;margin-bottom:8px;"><i class="fa-solid fa-file-contract" style="color:var(--dark-cyan);margin-right:8px;"></i>Términos y Condiciones</h4>
-          <p style="font-size:13px;color:var(--mid-gray);">Condiciones generales de uso del sitio web y términos de servicio para cotizaciones y pagos.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: PRIVACY POLICY
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-privacy">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Información Legal</div>
-      <h1>Aviso de <em>Privacidad</em></h1>
-      <p>Política de tratamiento de datos personales conforme a la legislación colombiana.</p>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#" onclick="showPage('contact')">Contáctenos</a> / Aviso de Privacidad</div>
-    </div>
-  </div>
-
-  <section class="section-pad">
-    <div class="container" style="max-width:860px;">
-
-      <div style="background:var(--light-gray);border-radius:var(--radius);padding:24px 32px;margin-bottom:40px;display:flex;align-items:center;gap:16px;">
-        <i class="fa-solid fa-circle-info" style="font-size:24px;color:var(--dark-cyan);"></i>
-        <div>
-          <strong style="font-size:14px;">Última actualización:</strong>
-          <span style="font-size:14px;color:var(--mid-gray);"> {{FECHA_ACTUALIZACION}} — Este documento debe ser revisado y aprobado por el área jurídica de AUTOSAFE S.A. antes de su publicación.</span>
-        </div>
-      </div>
-
-      <div class="legal-content">
-        <h2 style="font-size:22px;margin-bottom:16px;color:var(--midnight);">1. Responsable del Tratamiento</h2>
-        <p><strong>AUTOSAFE S.A.</strong> (en adelante "AutoSafe"), sociedad comercial colombiana con domicilio en la Calle 134D # 53 – 43, Bodega 3, Bogotá D.C., Colombia, identificada con NIT {{NIT_EMPRESA}}, es la entidad responsable del tratamiento de los datos personales recolectados a través de este sitio web y demás canales de contacto.</p>
-        <p><strong>Correo de contacto para datos personales:</strong> blindajes@autosafe.com.co<br>
-        <strong>Teléfono:</strong> +57 601 525 0125</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">2. Marco Normativo</h2>
-        <p>El presente aviso de privacidad se rige por la Constitución Política de Colombia (Artículo 15), la Ley 1581 de 2012 (Ley de Protección de Datos Personales), el Decreto 1377 de 2013, y demás normas que las complementen, modifiquen o sustituyan.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">3. Datos Personales Recolectados</h2>
-        <p>AutoSafe podrá recolectar, almacenar, usar y tratar los siguientes datos personales según el canal de contacto:</p>
-        <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
-          <p style="margin-bottom:8px;"><strong>Datos de identificación:</strong> Nombre completo, número de documento de identidad, ciudad de residencia.</p>
-          <p style="margin-bottom:8px;"><strong>Datos de contacto:</strong> Teléfono fijo y/o celular, correo electrónico, dirección.</p>
-          <p style="margin-bottom:8px;"><strong>Datos del vehículo:</strong> Marca, modelo, año, placa (cuando aplique para cotización de servicios).</p>
-          <p style="margin-bottom:8px;"><strong>Datos de navegación:</strong> Dirección IP, tipo de navegador, páginas visitadas, cookies (ver sección 9).</p>
-          <p><strong>Datos financieros:</strong> Exclusivamente los necesarios para procesar pagos en línea a través de pasarelas certificadas (PSE, tarjeta de crédito). AutoSafe no almacena datos de tarjetas de crédito en sus servidores.</p>
-        </div>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">4. Finalidades del Tratamiento</h2>
-        <p>Los datos personales serán tratados para las siguientes finalidades:</p>
-        <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
-          <p style="margin-bottom:8px;">a) Gestionar solicitudes de cotización de servicios de blindaje y mantenimiento.</p>
-          <p style="margin-bottom:8px;">b) Procesar pagos y transacciones en línea.</p>
-          <p style="margin-bottom:8px;">c) Enviar comunicaciones relacionadas con el servicio contratado (estado del proceso, citas de mantenimiento, garantías).</p>
-          <p style="margin-bottom:8px;">d) Enviar información comercial, promocional y de nuevos servicios (previa autorización del titular).</p>
-          <p style="margin-bottom:8px;">e) Realizar encuestas de satisfacción y mejora del servicio.</p>
-          <p style="margin-bottom:8px;">f) Cumplir obligaciones legales y requerimientos de autoridades competentes.</p>
-          <p>g) Gestionar la relación contractual con clientes, proveedores y aliados comerciales.</p>
-        </div>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">5. Derechos del Titular</h2>
-        <p>De conformidad con la Ley 1581 de 2012, el titular de los datos personales tiene derecho a:</p>
-        <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
-          <p style="margin-bottom:8px;">• Conocer, actualizar y rectificar sus datos personales.</p>
-          <p style="margin-bottom:8px;">• Solicitar prueba de la autorización otorgada.</p>
-          <p style="margin-bottom:8px;">• Ser informado sobre el uso que se ha dado a sus datos.</p>
-          <p style="margin-bottom:8px;">• Revocar la autorización y/o solicitar la supresión de sus datos cuando no se respeten los principios, derechos y garantías constitucionales y legales.</p>
-          <p>• Presentar quejas ante la Superintendencia de Industria y Comercio (SIC) por infracciones a la ley.</p>
-        </div>
-        <p>Para ejercer estos derechos, el titular podrá enviar su solicitud al correo <strong>blindajes@autosafe.com.co</strong> con el asunto "Derechos de datos personales", indicando su nombre completo, documento de identidad y la descripción de su solicitud. AutoSafe dará respuesta dentro de los plazos establecidos por la ley.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">6. Transferencia y Transmisión de Datos</h2>
-        <p>AutoSafe podrá compartir datos personales con terceros únicamente en los siguientes casos: (i) proveedores de servicios tecnológicos y pasarelas de pago que actúen como encargados del tratamiento, bajo contratos de confidencialidad; (ii) entidades del grupo empresarial WBA Security Group; (iii) autoridades competentes cuando exista obligación legal.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">7. Medidas de Seguridad</h2>
-        <p>AutoSafe implementa medidas técnicas, humanas y administrativas para proteger los datos personales contra acceso no autorizado, pérdida, alteración o destrucción, incluyendo: certificado SSL, firewalls, control de acceso a bases de datos, y capacitación al personal autorizado.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">8. Vigencia</h2>
-        <p>Los datos personales serán tratados durante el tiempo necesario para cumplir las finalidades descritas y conforme a los plazos legales de conservación aplicables. El titular podrá solicitar la supresión de sus datos en cualquier momento, salvo que exista obligación legal de conservarlos.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">9. Política de Cookies</h2>
-        <p>Este sitio web utiliza cookies propias y de terceros para mejorar la experiencia de navegación, analizar el tráfico y personalizar contenido. El usuario puede configurar su navegador para rechazar cookies, aunque algunas funcionalidades del sitio podrían verse afectadas. Para más información, consulte la configuración de cookies en su navegador.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">10. Modificaciones</h2>
-        <p>AutoSafe se reserva el derecho de modificar este Aviso de Privacidad en cualquier momento. Las modificaciones serán publicadas en esta misma URL y entrarán en vigencia a partir de su publicación. Se recomienda revisar periódicamente esta página.</p>
-      </div>
-
-      <div style="margin-top:48px;padding-top:32px;border-top:2px solid rgba(0,106,112,0.08);text-align:center;">
-        <p style="font-size:13px;color:var(--mid-gray);">AUTOSAFE S.A. — NIT {{NIT_EMPRESA}}<br>Calle 134D # 53 – 43, Bodega 3 · Bogotá D.C., Colombia<br>blindajes@autosafe.com.co · +57 601 525 0125</p>
-        <a href="#" class="btn btn-outline btn-sm" style="margin-top:16px;" onclick="showPage('contact')"><i class="fa-solid fa-arrow-left"></i> Volver a Contáctenos</a>
-      </div>
-
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     PAGE: TERMS & CONDITIONS
-     ═══════════════════════════════════════════════════════════ -->
-<div class="page" id="page-terms">
-  <div class="page-header">
-    <div class="container">
-      <div class="overline">Información Legal</div>
-      <h1>Términos y <em>Condiciones</em></h1>
-      <p>Condiciones generales de uso del sitio web y de los servicios de AutoSafe Blindajes.</p>
-      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#" onclick="showPage('contact')">Contáctenos</a> / Términos y Condiciones</div>
-    </div>
-  </div>
-
-  <section class="section-pad">
-    <div class="container" style="max-width:860px;">
-
-      <div style="background:var(--light-gray);border-radius:var(--radius);padding:24px 32px;margin-bottom:40px;display:flex;align-items:center;gap:16px;">
-        <i class="fa-solid fa-circle-info" style="font-size:24px;color:var(--dark-cyan);"></i>
-        <div>
-          <strong style="font-size:14px;">Última actualización:</strong>
-          <span style="font-size:14px;color:var(--mid-gray);"> {{FECHA_ACTUALIZACION}} — Este documento debe ser revisado y aprobado por el área jurídica de AUTOSAFE S.A. antes de su publicación.</span>
-        </div>
-      </div>
-
-      <div class="legal-content">
-        <h2 style="font-size:22px;margin-bottom:16px;color:var(--midnight);">1. Información General</h2>
-        <p>El presente documento establece los Términos y Condiciones de uso del sitio web <strong>www.autosafe.com.co</strong> (en adelante "el Sitio"), propiedad de <strong>AUTOSAFE S.A.</strong>, sociedad comercial colombiana con domicilio en Bogotá D.C., identificada con NIT {{NIT_EMPRESA}}. El acceso y uso del Sitio implica la aceptación plena e incondicional de estos términos.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">2. Objeto del Sitio</h2>
-        <p>El Sitio tiene como propósito presentar los servicios de blindaje vehicular, mantenimiento de vehículos blindados, vidrio antirrobo (Safe Glass) y proyectos especiales ofrecidos por AutoSafe, así como facilitar la solicitud de cotizaciones, agendamiento de citas, procesamiento de pagos en línea y la divulgación de contenido educativo sobre protección vehicular.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">3. Uso del Sitio</h2>
-        <p>El usuario se compromete a utilizar el Sitio de conformidad con la ley, la moral, el orden público y los presentes Términos. Queda prohibido:</p>
-        <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
-          <p style="margin-bottom:8px;">a) Utilizar el Sitio con fines ilícitos, fraudulentos o contrarios a lo establecido en estos Términos.</p>
-          <p style="margin-bottom:8px;">b) Intentar acceder a áreas restringidas del Sitio o de los sistemas informáticos de AutoSafe.</p>
-          <p style="margin-bottom:8px;">c) Reproducir, distribuir o modificar los contenidos del Sitio sin autorización previa y por escrito.</p>
-          <p>d) Introducir virus, código malicioso o cualquier elemento que pueda afectar el funcionamiento del Sitio.</p>
-        </div>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">4. Cotizaciones y Servicios</h2>
-        <p>Las cotizaciones solicitadas a través del Sitio tienen carácter informativo y no constituyen una oferta comercial vinculante. Los precios, plazos y condiciones definitivas serán confirmados por un asesor comercial de AutoSafe mediante comunicación directa con el cliente.</p>
-        <p>La contratación de cualquier servicio de blindaje o mantenimiento estará sujeta a la firma de un contrato independiente que regulará las condiciones específicas de la prestación del servicio, incluyendo precio, plazos de entrega, niveles de protección, garantías y forma de pago.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">5. Pagos en Línea</h2>
-        <p>Los pagos realizados a través del Sitio serán procesados por pasarelas de pago autorizadas (PSE, PayPal, tarjetas de crédito) que cuentan con sus propios términos de servicio y políticas de seguridad. AutoSafe no almacena datos de tarjetas de crédito ni información financiera sensible en sus servidores.</p>
-        <p>Los pagos en línea corresponden exclusivamente a anticipos, abonos o saldos previamente acordados con un asesor comercial. Cualquier discrepancia en montos debe ser reportada al correo <strong>blindajes@autosafe.com.co</strong> dentro de los 5 días hábiles siguientes a la transacción.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">6. Propiedad Intelectual</h2>
-        <p>Todos los contenidos del Sitio, incluyendo pero no limitándose a textos, imágenes, logotipos, marcas, gráficos, diseño, estructura de navegación, código fuente y bases de datos, son propiedad de AUTOSAFE S.A. o de terceros que han autorizado su uso, y están protegidos por las leyes colombianas e internacionales de propiedad intelectual (Ley 23 de 1982, Decisión Andina 351 de 1993).</p>
-        <p>La marca AUTOSAFE®, el isotipo del escudo y el eslogan "Protegemos lo más preciado... La vida" son marcas registradas de AUTOSAFE S.A. Se prohíbe su reproducción, distribución o uso sin autorización expresa.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">7. Garantías y Limitación de Responsabilidad</h2>
-        <p>Las garantías aplicables a los servicios de blindaje y mantenimiento serán las estipuladas en el contrato de servicios correspondiente y se regirán por las disposiciones del Estatuto del Consumidor (Ley 1480 de 2011).</p>
-        <p>AutoSafe no será responsable por: (i) interrupciones temporales del Sitio por mantenimiento o causas de fuerza mayor; (ii) daños derivados del uso inadecuado del Sitio por parte del usuario; (iii) la veracidad de la información proporcionada por el usuario en los formularios de cotización.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">8. Protección de Datos Personales</h2>
-        <p>El tratamiento de datos personales recolectados a través del Sitio se rige por el <a href="#" onclick="showPage('privacy')" style="color:var(--dark-cyan);font-weight:600;">Aviso de Privacidad</a> de AutoSafe y por la Ley 1581 de 2012.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">9. Legislación Aplicable y Jurisdicción</h2>
-        <p>Los presentes Términos y Condiciones se rigen por las leyes de la República de Colombia. Cualquier controversia derivada del uso del Sitio será sometida a la jurisdicción de los jueces y tribunales de Bogotá D.C., Colombia, salvo disposición legal en contrario que establezca una jurisdicción diferente.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">10. Modificaciones</h2>
-        <p>AutoSafe se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán publicadas en esta URL y entrarán en vigencia a partir de su publicación. El uso continuado del Sitio después de la publicación de cambios implica la aceptación de los mismos.</p>
-
-        <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">11. Contacto</h2>
-        <p>Para consultas relacionadas con estos Términos y Condiciones, el usuario podrá comunicarse a:</p>
-        <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
-          <p style="margin-bottom:4px;"><strong>AUTOSAFE S.A.</strong></p>
-          <p style="margin-bottom:4px;">Calle 134D # 53 – 43, Bodega 3 · Bogotá D.C., Colombia</p>
-          <p style="margin-bottom:4px;">Correo: blindajes@autosafe.com.co</p>
-          <p>Teléfono: +57 601 525 0125</p>
-        </div>
-      </div>
-
-      <div style="margin-top:48px;padding-top:32px;border-top:2px solid rgba(0,106,112,0.08);text-align:center;">
-        <p style="font-size:13px;color:var(--mid-gray);">AUTOSAFE S.A. — NIT {{NIT_EMPRESA}}<br>Calle 134D # 53 – 43, Bodega 3 · Bogotá D.C., Colombia<br>blindajes@autosafe.com.co · +57 601 525 0125</p>
-        <a href="#" class="btn btn-outline btn-sm" style="margin-top:16px;" onclick="showPage('contact')"><i class="fa-solid fa-arrow-left"></i> Volver a Contáctenos</a>
-      </div>
-
-    </div>
-  </section>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════
-     FOOTER (Global)
-     ═══════════════════════════════════════════════════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="img/logo-white.svg" alt="AutoSafe Blindajes" style="height:40px;margin-bottom:8px;">
-        <p>Protegemos lo más preciado... La vida. Más de 20 años de experiencia en blindaje vehicular con tecnología alemana y presencia internacional.</p>
-        <div class="footer-social">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span>Lun – Vie: 8:00 AM – 5:00 PM</span>
+        <div class="topbar-social">
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-      </div>
-      <div class="footer-col">
-        <h4>Servicios</h4>
-        <ul>
-          <li><a href="#" onclick="showPage('services')">Blindaje de Vehículos</a></li>
-          <li><a href="#" onclick="showPage('services')">Mantenimiento</a></li>
-          <li><a href="#" onclick="showPage('services')">Safe Glass</a></li>
-          <li><a href="#" onclick="showPage('services')">Proyectos Especiales</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Empresa</h4>
-        <ul>
-          <li><a href="#" onclick="showPage('about')">Nuestra Historia</a></li>
-          <li><a href="#" onclick="showPage('about')">Misión y Visión</a></li>
-          <li><a href="#" onclick="showPage('about')">Certificaciones</a></li>
-          <li><a href="#" onclick="showPage('blog')">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contacto</h4>
-        <ul>
-          <li><a href="#">Calle 134D # 53–43 Bod. 3</a></li>
-          <li><a href="#">Bogotá D.C., Colombia</a></li>
-          <li><a href="tel:+576015250125">+57 601 525 0125</a></li>
-          <li><a href="mailto:blindajes@autosafe.com.co">blindajes@autosafe.com.co</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 AutoSafe Blindajes S.A. — Todos los derechos reservados. Parte de WBA Security Group.</span>
-      <div style="display:flex;gap:16px;">
-        <a href="#" onclick="showPage('privacy')">Aviso de Privacidad</a>
-        <a href="#" onclick="showPage('terms')">Términos y Condiciones</a>
       </div>
     </div>
   </div>
-</footer>
 
-<!-- ═══════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo" onclick="showPage('home')">
+        <img src="img/logo-black.svg" alt="AutoSafe Blindajes" class="nav-logo-img">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#" onclick="showPage('home')" class="active" data-page="home">Inicio</a>
+        <a href="#" onclick="showPage('about')" data-page="about">Nosotros</a>
+        <a href="#" onclick="showPage('services')" data-page="services">Servicios</a>
+        <a href="#" onclick="showPage('blog')" data-page="blog">Blog</a>
+        <a href="#" onclick="showPage('payment')" data-page="payment">Pago en Línea</a>
+        <a href="#" onclick="showPage('contact')" data-page="contact">Contáctenos</a>
+        <a href="#" onclick="showPage('contact')" class="nav-cta">Cotizar <i class="fa-solid fa-arrow-right"
+            style="font-size:12px;"></i></a>
+      </div>
+      <button class="mobile-toggle" onclick="toggleMobileNav()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: HOME
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page active" id="page-home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- Background slides -->
+      <div class="hero-slides">
+        <div class="hero-slide active" style="background-image:url('img/hero-slide-1.jpg');"></div>
+        <div class="hero-slide" style="background-image:url('img/hero-slide-2.jpg');"></div>
+        <div class="hero-slide" style="background-image:url('img/hero-slide-3.jpg');"></div>
+        <div class="hero-slide" style="background-image:url('img/hero-slide-4.jpg');"></div>
+      </div>
+
+      <!-- Kevlar pattern overlay -->
+      <div
+        style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;pointer-events:none;
+      background-image:repeating-linear-gradient(45deg,transparent,transparent 12px,rgba(0,156,156,0.04) 12px,rgba(0,156,156,0.04) 14px);">
+      </div>
+
+      <!-- Slide 1: Propuesta de valor -->
+      <div class="hero-content-slide active" data-slide="0">
+        <div class="container" style="position:relative;z-index:2;">
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fa-solid fa-shield-halved"></i> Más de 20 Años de Experiencia</div>
+            <h1>Protección <em>Balística</em> de Clase Mundial</h1>
+            <p class="hero-slogan">Protegemos lo más preciado... La vida.</p>
+            <p>Blindaje certificado con tecnología alemana OEM, materiales Kevlar® y nuestro sistema exclusivo MAP Multi
+              Angle Protection.</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Solicitar Cotización <i
+                  class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="btn btn-secondary" onclick="showPage('services')">Conocer Servicios</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <div class="hero-stat-number">1.000+</div>
+                <div class="hero-stat-label">Vehículos Blindados</div>
+              </div>
+              <div>
+                <div class="hero-stat-number">20+</div>
+                <div class="hero-stat-label">Años de Experiencia</div>
+              </div>
+              <div>
+                <div class="hero-stat-number">4</div>
+                <div class="hero-stat-label">Países</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Flota / Promoción -->
+      <div class="hero-content-slide" data-slide="1">
+        <div class="container" style="position:relative;z-index:2;">
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fa-solid fa-car-side"></i> Todas las Marcas Premium</div>
+            <h1>Blindamos las Mejores <em>Marcas</em> del Mundo</h1>
+            <p class="hero-slogan">Toyota · BMW · Mercedes-Benz · Lexus · Audi</p>
+            <p>Trabajamos sobre los vehículos más reconocidos del mercado, garantizando acabados de fábrica y protección
+              integral sin comprometer el confort.</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-gold" onclick="showPage('contact')">Cotizar Mi Vehículo <i
+                  class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="btn btn-secondary" onclick="showPage('blog')">Ver Galería de Marcas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Interior / Confort -->
+      <div class="hero-content-slide" data-slide="2">
+        <div class="container" style="position:relative;z-index:2;">
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fa-solid fa-gem"></i> Confort y Seguridad</div>
+            <h1>Seguridad que parece <em>Invisible</em></h1>
+            <p class="hero-slogan">Protección que no se siente. Lujo intacto.</p>
+            <p>Nuestro blindaje preserva la experiencia original del vehículo. Interior, ergonomía y conducción se
+              mantienen como de fábrica.</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Agendar una Cita <i
+                  class="fa-solid fa-calendar-check"></i></a>
+              <a href="#" class="btn btn-secondary" onclick="showPage('about')">Conocer Nuestro Proceso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Familia / Emocional -->
+      <div class="hero-content-slide" data-slide="3">
+        <div class="container" style="position:relative;z-index:2;">
+          <div class="hero-content">
+            <div class="hero-badge"><i class="fa-solid fa-heart-pulse"></i> Más de 1.000 Familias Protegidas</div>
+            <h1>Protegemos lo que Más <em>Importa</em></h1>
+            <p class="hero-slogan">Su tranquilidad. Su familia. Su vida.</p>
+            <p>Detrás de cada vehículo blindado hay una familia que llega segura a casa. Esa es nuestra misión desde
+              hace más de 20 años.</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary" onclick="showPage('contact')">Proteja a su Familia Hoy <i
+                  class="fa-solid fa-shield-heart"></i></a>
+              <a href="#" class="btn btn-secondary" onclick="showPage('about')">Conozca Nuestra Historia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider dots -->
+      <div class="hero-dots">
+        <div class="hero-dot active" onclick="goToSlide(0)"></div>
+        <div class="hero-dot" onclick="goToSlide(1)"></div>
+        <div class="hero-dot" onclick="goToSlide(2)"></div>
+        <div class="hero-dot" onclick="goToSlide(3)"></div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section style="padding:32px 0; border-bottom:1px solid rgba(0,106,112,0.06);">
+      <div class="container">
+        <div class="trust-bar">
+          <div class="trust-logo">BMW</div>
+          <div class="trust-logo">Toyota</div>
+          <div class="trust-logo">Mercedes</div>
+          <div class="trust-logo">Lexus</div>
+          <div class="trust-logo">Jeep</div>
+          <div class="trust-logo">Audi</div>
+          <div class="trust-logo">VW</div>
+          <div class="trust-logo">Land Rover</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="section-pad kevlar-pattern">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
+          <div>
+            <div class="section-header">
+              <div class="overline">Acerca de AutoSafe</div>
+              <h2>Más de Dos Décadas <em>Protegiendo Vidas</em></h2>
+              <p>Parte de WBA Security Group, con presencia internacional en Colombia, México, Brasil y Alemania.
+                Tecnología alemana, calidad colombiana.</p>
+            </div>
+            <div style="display:flex;gap:24px;margin-top:32px;">
+              <div style="text-align:center;">
+                <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇨🇴
+                </div>
+                <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">Colombia</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇲🇽
+                </div>
+                <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">México</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇧🇷
+                </div>
+                <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">Brasil</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--dark-cyan);">🇩🇪
+                </div>
+                <div style="font-size:12px;color:var(--mid-gray);margin-top:4px;">Alemania</div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline" style="margin-top:32px;" onclick="showPage('about')">Conocer Nuestra
+              Historia <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div style="height:400px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);">
+            <img src="img/workshop.jpg" alt="Planta AutoSafe — Taller de Blindaje"
+              style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-header text-center" style="max-width:600px;margin-left:auto;margin-right:auto;">
+          <div class="overline" style="justify-content:center;">Nuestros Servicios</div>
+          <h2>Soluciones Integrales de <em>Protección Balística</em></h2>
+          <p>Desde blindaje contra delincuencia urbana hasta proyectos especiales de alto riesgo. Cada solución,
+            diseñada a su medida.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Blindaje de Vehículos</h3>
+            <p>Protección balística certificada en múltiples niveles, con tecnología alemana OEM y materiales Kevlar®.
+            </p>
+            <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h3>Mantenimiento Blindados</h3>
+            <p>Servicio especializado de mantenimiento preventivo y correctivo para vehículos blindados de cualquier
+              empresa.</p>
+            <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card-icon"><i class="fa-solid fa-glass-water"></i></div>
+            <h3>Safe Glass — Vidrio Antirrobo</h3>
+            <p>Protección contra robo con vidrio de seguridad reforzado. La solución más accesible del mercado.</p>
+            <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card-icon"><i class="fa-solid fa-gear"></i></div>
+            <h3>Proyectos Especiales</h3>
+            <p>Blindaje arquitectónico, vehículos especiales, flotillas corporativas y soluciones personalizadas.</p>
+            <a href="#" class="service-card-link" onclick="showPage('services')">Ver detalles <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section-pad bg-midnight kevlar-pattern">
+      <div class="container">
+        <div class="section-header text-center" style="max-width:600px;margin-left:auto;margin-right:auto;">
+          <div class="overline" style="justify-content:center;">¿Por Qué Elegirnos?</div>
+          <h2>Su Seguridad Merece lo <em>Mejor</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-certificate"></i></div>
+            <h3 style="color:var(--white);">Certificaciones Internacionales</h3>
+            <p style="color:rgba(255,255,255,0.5);">Homologaciones y certificados que avalan la calidad de cada proceso
+              de blindaje.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3 style="color:var(--white);">Servicio Personalizado</h3>
+            <p style="color:rgba(255,255,255,0.5);">Asesoría integral desde la evaluación de riesgo hasta la entrega y
+              seguimiento postventa.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-tag"></i></div>
+            <h3 style="color:var(--white);">Precios Justos</h3>
+            <p style="color:rgba(255,255,255,0.5);">Inversión transparente y competitiva sin comprometer la calidad de
+              los materiales.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <h3 style="color:var(--white);">Garantía AutoSafe</h3>
+            <p style="color:rgba(255,255,255,0.5);">Respaldo completo con garantía extendida en blindaje, mecanismo y
+              componentes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-header">
+          <div class="overline">Testimonios</div>
+          <h2>Lo Que Dicen Nuestros <em>Clientes</em></h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"El proceso fue completamente transparente. Me entregaron el vehículo en el tiempo
+              acordado y el nivel de acabado es impecable."</p>
+            <div class="review-author">
+              <div class="review-avatar">JR</div>
+              <div class="review-author-info">
+                <strong>Juan R.</strong>
+                <span>Empresario — Bogotá</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Llevamos blindando nuestra flota con AutoSafe hace 5 años. La atención postventa y
+              el mantenimiento son de primer nivel."</p>
+            <div class="review-author">
+              <div class="review-avatar">MC</div>
+              <div class="review-author-info">
+                <strong>María C.</strong>
+                <span>Directora de Seguridad — Multinacional</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Me preocupaba que el blindaje cambiara la conducción del vehículo. Con AutoSafe, la
+              diferencia es prácticamente imperceptible."</p>
+            <div class="review-author">
+              <div class="review-avatar">AP</div>
+              <div class="review-author-info">
+                <strong>Andrés P.</strong>
+                <span>Ejecutivo — Medellín</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section-pad bg-light">
+      <div class="container text-center">
+        <div class="section-header text-center" style="max-width:500px;margin-left:auto;margin-right:auto;">
+          <div class="overline" style="justify-content:center;">Certificaciones</div>
+          <h2>Respaldo <em>Internacional</em></h2>
+        </div>
+        <div class="trust-bar">
+          <div class="trust-logo" style="width:120px;">CERT 1</div>
+          <div class="trust-logo" style="width:120px;">CERT 2</div>
+          <div class="trust-logo" style="width:120px;">ISO</div>
+          <div class="trust-logo" style="width:120px;">SVSP</div>
+          <div class="trust-logo" style="width:120px;">WBA</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>¿Listo para Proteger lo que <em>Más Importa</em>?</h2>
+            <p>Solicite una cotización personalizada sin compromiso. Respuesta en menos de 24 horas.</p>
+          </div>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;">
+            <a href="#" class="btn btn-gold" onclick="showPage('contact')">Solicitar Cotización</a>
+            <a href="#" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: ABOUT
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-about">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Nuestra Empresa</div>
+        <h1>Acerca de <em>AutoSafe</em></h1>
+        <p>Más de dos décadas protegiendo vidas con tecnología de vanguardia y compromiso inquebrantable.</p>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Acerca de AutoSafe</div>
+      </div>
+    </div>
+
+    <!-- History -->
+    <section class="section-pad">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;">
+          <div>
+            <div class="section-header">
+              <div class="overline">Nuestra Historia</div>
+              <h2>De Colombia para <em>el Mundo</em></h2>
+              <p>Desde nuestra fundación, AutoSafe ha sido pionero en la industria del blindaje vehicular en América
+                Latina.</p>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2003</div>
+                <h3>Fundación en Colombia</h3>
+                <p>Inicio de operaciones en Bogotá con un enfoque en protección balística de calidad premium.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2008</div>
+                <h3>Expansión a México</h3>
+                <p>Apertura de AutoSafe México para atender la creciente demanda del mercado centroamericano.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2014</div>
+                <h3>Presencia en Brasil</h3>
+                <p>Consolidación en el mercado sudamericano con operaciones en São Paulo.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-year">2020</div>
+                <h3>Alianza con Tecnología Alemana</h3>
+                <p>Incorporación de tecnología OEM alemana y componentes de clase mundial.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img-placeholder" style="height:400px;margin-bottom:24px;">
+              <i class="fa-solid fa-images"></i>
+              Galería — Historia AutoSafe
+            </div>
+            <div class="presence-grid">
+              <div class="presence-card">
+                <div class="presence-flag">🇨🇴</div>
+                <h3>Colombia</h3>
+                <p>Sede principal — Bogotá D.C.</p>
+              </div>
+              <div class="presence-card">
+                <div class="presence-flag">🇲🇽</div>
+                <h3>México</h3>
+                <p>Operaciones LATAM Norte</p>
+              </div>
+              <div class="presence-card">
+                <div class="presence-flag">🇧🇷</div>
+                <h3>Brasil</h3>
+                <p>Mercado sudamericano</p>
+              </div>
+              <div class="presence-card">
+                <div class="presence-flag">🇩🇪</div>
+                <h3>Alemania</h3>
+                <p>Tecnología y certificación</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section-pad bg-light kevlar-pattern">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;">
+          <div style="background:var(--white);border-radius:var(--radius);padding:48px;box-shadow:var(--shadow-sm);">
+            <div style="font-size:48px;margin-bottom:16px;">🎯</div>
+            <h3 style="font-size:22px;margin-bottom:16px;">Nuestra Misión</h3>
+            <p style="color:var(--mid-gray);line-height:1.8;">Proteger la vida y la tranquilidad de nuestros clientes
+              mediante soluciones de blindaje vehicular de clase mundial, con materiales certificados, tecnología de
+              punta y un servicio que supere todas las expectativas.</p>
+          </div>
+          <div style="background:var(--white);border-radius:var(--radius);padding:48px;box-shadow:var(--shadow-sm);">
+            <div style="font-size:48px;margin-bottom:16px;">👁</div>
+            <h3 style="font-size:22px;margin-bottom:16px;">Nuestra Visión</h3>
+            <p style="color:var(--mid-gray);line-height:1.8;">Consolidarnos como la empresa líder en protección
+              balística vehicular en América Latina, reconocida por la excelencia de nuestros procesos, la innovación
+              constante y el compromiso con la vida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us (detail) -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-header text-center" style="max-width:600px;margin-left:auto;margin-right:auto;">
+          <div class="overline" style="justify-content:center;">Diferenciadores</div>
+          <h2>¿Por Qué <em>AutoSafe</em>?</h2>
+        </div>
+        <div class="why-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+          <div
+            style="background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);">
+            <div style="font-size:32px;margin-bottom:16px;">🔬</div>
+            <h3>Tecnología Alemana OEM</h3>
+            <p style="font-size:14px;color:var(--mid-gray);margin-top:8px;">Componentes originales de fábrica que
+              garantizan integración perfecta con el vehículo.</p>
+          </div>
+          <div
+            style="background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);">
+            <div style="font-size:32px;margin-bottom:16px;">🛡</div>
+            <h3>Sistema MAP®</h3>
+            <p style="font-size:14px;color:var(--mid-gray);margin-top:8px;">Multi Angle Protection: protección en
+              ángulos no convencionales para seguridad total.</p>
+          </div>
+          <div
+            style="background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);">
+            <div style="font-size:32px;margin-bottom:16px;">📋</div>
+            <h3>Certificaciones</h3>
+            <p style="font-size:14px;color:var(--mid-gray);margin-top:8px;">Homologación ante la Superintendencia de
+              Vigilancia y Seguridad Privada, normas internacionales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-pad bg-light">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Confíe en Quienes <em>Protegen Vidas</em></h2>
+            <p>Agende una visita a nuestra planta y conozca nuestros procesos de primera mano.</p>
+          </div>
+          <a href="#" class="btn btn-gold" onclick="showPage('contact')">Agendar Visita</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: SERVICES
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-services">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Portafolio</div>
+        <h1>Nuestros <em>Servicios</em></h1>
+        <p>Soluciones completas de protección balística y seguridad vehicular para cada necesidad.</p>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Servicios</div>
+      </div>
+    </div>
+
+    <section class="section-pad">
+      <div class="container">
+
+        <!-- Blindaje -->
+        <div class="service-detail">
+          <div>
+            <div
+              style="display:inline-block;background:rgba(0,156,156,0.1);color:var(--dark-cyan);font-family:var(--font-display);font-weight:700;font-size:11px;padding:6px 14px;border-radius:50px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">
+              Servicio Principal</div>
+            <h3>Blindaje de Vehículos</h3>
+            <p>Protección balística integral con tecnología alemana OEM, materiales Kevlar® y el exclusivo sistema MAP
+              Multi Angle Protection. Trabajamos sobre todas las marcas premium y de alta gama.</p>
+            <div class="service-levels">
+              <span class="service-level"><i class="fa-solid fa-shield-halved"></i> Anti Delincuencia Urbana</span>
+              <span class="service-level"><i class="fa-solid fa-shield-halved"></i> Anti Crimen Organizado</span>
+              <span class="service-level"><i class="fa-solid fa-shield-halved"></i> Alto Riesgo / Antiterrorismo</span>
+            </div>
+            <a href="#" class="btn btn-primary" style="margin-top:24px;" onclick="showPage('contact')">Cotizar
+              Blindaje</a>
+          </div>
+          <div class="img-placeholder" style="height:360px;">
+            <i class="fa-solid fa-car-side"></i>
+            Imagen — Vehículo Blindado<br><small>Proceso de blindaje / resultado final</small>
+          </div>
+        </div>
+
+        <!-- Mantenimiento -->
+        <div class="service-detail">
+          <div>
+            <h3>Mantenimiento de Vehículos Blindados</h3>
+            <p>Servicio especializado de mantenimiento preventivo y correctivo. Atendemos vehículos blindados por
+              cualquier empresa. Técnicos certificados, repuestos originales y tiempos de respuesta garantizados.</p>
+            <p><strong style="color:var(--dark-cyan);">¿Su vehículo fue blindado en otra empresa?</strong> También lo
+              mantenemos con los más altos estándares.</p>
+            <a href="#" class="btn btn-outline" style="margin-top:16px;" onclick="showPage('contact')">Agendar
+              Mantenimiento</a>
+          </div>
+          <div class="img-placeholder" style="height:360px;">
+            <i class="fa-solid fa-wrench"></i>
+            Imagen — Taller de Mantenimiento
+          </div>
+        </div>
+
+        <!-- Safe Glass -->
+        <div class="service-detail">
+          <div>
+            <h3>Safe Glass — Vidrio Antirrobo</h3>
+            <p>Protección contra robo y asalto mediante vidrio de seguridad laminado reforzado. La solución más
+              accesible para quienes buscan un primer nivel de protección sin blindaje completo.</p>
+            <a href="#" class="btn btn-outline" style="margin-top:16px;" onclick="showPage('contact')">Solicitar
+              Información</a>
+          </div>
+          <div class="img-placeholder" style="height:360px;">
+            <i class="fa-solid fa-glass-water"></i>
+            Imagen — Vidrio Safe Glass
+          </div>
+        </div>
+
+        <!-- Proyectos Especiales -->
+        <div class="service-detail">
+          <div>
+            <h3>Proyectos Especiales de Blindaje</h3>
+            <p>Soluciones a medida para necesidades únicas: blindaje arquitectónico, vehículos especiales de transporte,
+              flotillas corporativas, embajadas y edificaciones críticas.</p>
+            <a href="#" class="btn btn-outline" style="margin-top:16px;" onclick="showPage('contact')">Consultar
+              Proyecto</a>
+          </div>
+          <div class="img-placeholder" style="height:360px;">
+            <i class="fa-solid fa-gear"></i>
+            Imagen — Proyectos Especiales
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-pad bg-light">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Cada Necesidad Tiene una <em>Solución</em></h2>
+            <p>Cuéntenos su caso y diseñamos la protección ideal para usted.</p>
+          </div>
+          <a href="#" class="btn btn-gold" onclick="showPage('contact')">Hablar con un Asesor</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: BLOG
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-blog">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Contenido</div>
+        <h1>Blog, Casos de Éxito y <em>Galería</em></h1>
+        <p>Noticias, artículos educativos y el portafolio de marcas que hemos blindado.</p>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Blog</div>
+      </div>
+    </div>
+
+    <!-- Articles -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-header">
+          <div class="overline">Artículos Destacados</div>
+          <h2>Aprenda Sobre <em>Blindaje</em></h2>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Educación</span>
+              <h3><a href="#" onclick="showPage('article')" style="color:inherit;">¿Qué es el blindaje vehicular y cómo
+                  funciona?</a></h3>
+              <p>Guía completa sobre los fundamentos del blindaje, niveles de protección y materiales utilizados.</p>
+              <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Mar 15, 2025</span><span><i
+                    class="fa-regular fa-clock"></i> 8 min lectura</span></div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Seguridad</span>
+              <h3>5 Mitos sobre los Vehículos Blindados</h3>
+              <p>Desmontamos las creencias más comunes sobre peso, consumo y conducción de vehículos blindados.</p>
+              <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 28, 2025</span><span><i
+                    class="fa-regular fa-clock"></i> 5 min lectura</span></div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag">Mantenimiento</span>
+              <h3>Mantenimiento Preventivo: Claves para su Blindado</h3>
+              <p>Por qué el mantenimiento especializado es crucial para la vida útil de su vehículo blindado.</p>
+              <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 10, 2025</span><span><i
+                    class="fa-regular fa-clock"></i> 6 min lectura</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Cases -->
+    <section class="section-pad bg-light">
+      <div class="container">
+        <div class="section-header">
+          <div class="overline">Portafolio</div>
+          <h2>Casos de <em>Éxito</em></h2>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag" style="background:rgba(200,168,75,0.15);color:var(--gold);">Caso de Éxito</span>
+              <h3><a href="#" onclick="showPage('case')" style="color:inherit;">Blindaje de Flota Corporativa —
+                  Multinacional</a></h3>
+              <p>12 vehículos blindados nivel III+ para la flota ejecutiva de una multinacional en Colombia.</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="img-placeholder blog-card-img" style="border-radius:0;border:none;min-height:0;">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-tag" style="background:rgba(200,168,75,0.15);color:var(--gold);">Caso de Éxito</span>
+              <h3>Proyecto Especial — Entidad Gubernamental</h3>
+              <p>Solución integral de blindaje para vehículos de transporte de funcionarios de alto perfil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Gallery -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-header">
+          <div class="overline">Galería</div>
+          <h2>Marcas que <em>Blindamos</em></h2>
+        </div>
+        <div class="brand-gallery">
+          <div class="brand-tile">Toyota</div>
+          <div class="brand-tile">BMW</div>
+          <div class="brand-tile">Mercedes-Benz</div>
+          <div class="brand-tile">Chevrolet</div>
+          <div class="brand-tile">Lexus</div>
+          <div class="brand-tile">Jeep</div>
+          <div class="brand-tile">Audi</div>
+          <div class="brand-tile">Volkswagen</div>
+          <div class="brand-tile">Land Rover</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: BLOG ARTICLE TEMPLATE
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-article">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Blog</div>
+        <h1>¿Qué es el Blindaje Vehicular y <em>Cómo Funciona</em>?</h1>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#"
+            onclick="showPage('blog')">Blog</a> / ¿Qué es el Blindaje Vehicular?</div>
+      </div>
+    </div>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="article-layout">
+          <!-- Main Content -->
+          <div class="article-body">
+            <!-- Featured Image -->
+            <div class="article-featured-img">
+              <div class="img-placeholder" style="height:380px;border-radius:0;border:none;min-height:0;">
+                <i class="fa-solid fa-image"></i>
+                Imagen Destacada del Artículo<br><small>1200 × 630px recomendado</small>
+              </div>
+            </div>
+
+            <!-- Meta Bar -->
+            <div class="article-meta-bar">
+              <div class="article-author">
+                <div class="article-author-avatar">AS</div>
+                <div>
+                  <strong style="font-size:13px;display:block;">AutoSafe Blindajes</strong>
+                  <span style="font-size:11px;color:var(--mid-gray);">Equipo Editorial</span>
+                </div>
+              </div>
+              <div class="article-meta-item"><i class="fa-regular fa-calendar"></i> Marzo 15, 2025</div>
+              <div class="article-meta-item"><i class="fa-regular fa-clock"></i> 8 min lectura</div>
+              <div class="article-meta-item"><span class="blog-tag" style="margin:0;">Educación</span></div>
+              <div class="article-share">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <!-- Article Content -->
+            <p><strong>El blindaje vehicular es un proceso de ingeniería especializada</strong> que refuerza la
+              estructura de un vehículo con materiales balísticos certificados, capaces de resistir impactos de
+              proyectiles de armas de fuego y otros elementos de agresión. En Colombia, donde la seguridad personal es
+              una prioridad creciente, entender este proceso es fundamental para tomar decisiones informadas.</p>
+
+            <h2>¿Cómo funciona el blindaje?</h2>
+            <p>El proceso consiste en instalar capas de materiales de protección balística en las áreas críticas del
+              vehículo: puertas, techo, piso, pilares, vidrios y componentes del motor. Estos materiales incluyen acero
+              balístico, fibras aramídicas (como Kevlar®), y vidrio laminado multicapa.</p>
+            <p>En AutoSafe utilizamos nuestro sistema exclusivo MAP (Multi Angle Protection), que garantiza protección
+              en ángulos no convencionales donde otros sistemas presentan vulnerabilidades.</p>
+
+            <blockquote>"Un blindaje de calidad no se nota. El vehículo debe verse, sentirse y conducirse como salió de
+              fábrica."</blockquote>
+
+            <h2>Niveles de protección</h2>
+            <p>Los niveles de blindaje se clasifican según la amenaza que pueden resistir. En Colombia, los niveles más
+              comunes son:</p>
+            <ul>
+              <li><strong>Nivel II / II-A:</strong> Protección contra armas cortas de bajo calibre. Ideal para
+                delincuencia urbana común.</li>
+              <li><strong>Nivel III:</strong> Resistencia a armas cortas de alto calibre y subametralladoras. El nivel
+                más solicitado en Colombia.</li>
+              <li><strong>Nivel III+ / IV:</strong> Protección contra rifles de asalto. Recomendado para alto riesgo y
+                crimen organizado.</li>
+              <li><strong>Nivel V+:</strong> Protección contra armamento militar. Para proyectos gubernamentales y
+                antiterrorismo.</li>
+            </ul>
+
+            <h2>Materiales utilizados</h2>
+            <p>La calidad del blindaje depende directamente de los materiales empleados. En AutoSafe trabajamos con
+              tecnología alemana OEM y componentes de grado militar, incluyendo Kevlar® de DuPont, acero balístico
+              certificado, y vidrio laminado con capas de policarbonato.</p>
+
+            <div class="img-placeholder" style="height:280px;margin:24px 0;">
+              <i class="fa-solid fa-image"></i>
+              Imagen — Materiales de blindaje / Proceso<br><small>1200 × 500px</small>
+            </div>
+
+            <h2>¿Cuánto tiempo toma el proceso?</h2>
+            <p>El tiempo de blindaje varía según el nivel de protección y el modelo del vehículo. En promedio, un
+              blindaje completo toma entre 4 y 8 semanas. Durante este período, el vehículo pasa por más de 15
+              estaciones de trabajo especializadas.</p>
+
+            <h2>¿El blindaje afecta la conducción?</h2>
+            <p>Un blindaje de calidad profesional no debe alterar significativamente la experiencia de conducción. En
+              AutoSafe, reforzamos la suspensión, frenos y componentes mecánicos para compensar el peso adicional del
+              blindaje, garantizando una conducción segura y confortable.</p>
+
+            <!-- CTA -->
+            <div class="cta-banner" style="margin-top:40px;">
+              <div>
+                <h2 style="font-size:22px;">¿Tiene Preguntas sobre <em>Blindaje</em>?</h2>
+                <p>Nuestros asesores están listos para guiarle en la mejor solución de protección.</p>
+              </div>
+              <a href="#" class="btn btn-gold" onclick="showPage('contact')">Solicitar Asesoría</a>
+            </div>
+
+            <!-- Navigation -->
+            <div class="article-nav">
+              <a href="#" onclick="showPage('blog')"><i class="fa-solid fa-arrow-left"></i> Volver al Blog</a>
+              <a href="#" onclick="showPage('blog')">Siguiente Artículo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="article-sidebar">
+            <!-- CTA Card -->
+            <div class="sidebar-card"
+              style="background:linear-gradient(135deg,var(--midnight),var(--jet));color:var(--white);border:none;">
+              <h4 style="color:var(--celeste);border-color:rgba(184,236,229,0.2);">¿Listo para Protegerse?</h4>
+              <p style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:16px;">Solicite una cotización
+                personalizada sin compromiso.</p>
+              <a href="#" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;"
+                onclick="showPage('contact')">Cotizar Ahora</a>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="sidebar-card">
+              <h4>Artículos Relacionados</h4>
+              <div class="sidebar-related" onclick="showPage('blog')">
+                <div class="sidebar-related-thumb"><i class="fa-solid fa-newspaper"></i></div>
+                <div class="sidebar-related-text">
+                  <h5>5 Mitos sobre Vehículos Blindados</h5>
+                  <span>5 min · Seguridad</span>
+                </div>
+              </div>
+              <div class="sidebar-related" onclick="showPage('blog')">
+                <div class="sidebar-related-thumb"><i class="fa-solid fa-newspaper"></i></div>
+                <div class="sidebar-related-text">
+                  <h5>Mantenimiento Preventivo: Claves para su Blindado</h5>
+                  <span>6 min · Mantenimiento</span>
+                </div>
+              </div>
+              <div class="sidebar-related" onclick="showPage('blog')">
+                <div class="sidebar-related-thumb"><i class="fa-solid fa-newspaper"></i></div>
+                <div class="sidebar-related-text">
+                  <h5>Niveles de Blindaje: Guía Completa</h5>
+                  <span>7 min · Educación</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-card">
+              <h4>Categorías</h4>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <span class="blog-tag" style="cursor:pointer;">Educación</span>
+                <span class="blog-tag" style="cursor:pointer;">Seguridad</span>
+                <span class="blog-tag" style="cursor:pointer;">Mantenimiento</span>
+                <span class="blog-tag" style="cursor:pointer;">Tecnología</span>
+                <span class="blog-tag" style="cursor:pointer;">Casos de Éxito</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: CASE STUDY TEMPLATE
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-case">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Caso de Éxito</div>
+        <h1>Blindaje de Flota Corporativa — <em>Multinacional</em></h1>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#"
+            onclick="showPage('blog')">Blog</a> / Caso de Éxito: Flota Corporativa</div>
+      </div>
+    </div>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="article-layout">
+          <!-- Main Content -->
+          <div class="article-body">
+            <!-- Featured Image -->
+            <div class="article-featured-img">
+              <div class="img-placeholder" style="height:380px;border-radius:0;border:none;min-height:0;">
+                <i class="fa-solid fa-trophy"></i>
+                Imagen Destacada — Caso de Éxito<br><small>1200 × 630px recomendado</small>
+              </div>
+            </div>
+
+            <!-- Key Stats -->
+            <div class="case-hero-stats">
+              <div class="case-stat">
+                <div class="case-stat-number">12</div>
+                <div class="case-stat-label">Vehículos Blindados</div>
+              </div>
+              <div class="case-stat">
+                <div class="case-stat-number">III+</div>
+                <div class="case-stat-label">Nivel de Protección</div>
+              </div>
+              <div class="case-stat">
+                <div class="case-stat-number">6</div>
+                <div class="case-stat-label">Semanas por Vehículo</div>
+              </div>
+            </div>
+
+            <!-- Meta Bar -->
+            <div class="article-meta-bar">
+              <div class="article-meta-item"><i class="fa-solid fa-building"></i> Sector Corporativo</div>
+              <div class="article-meta-item"><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</div>
+              <div class="article-meta-item"><i class="fa-regular fa-calendar"></i> 2024</div>
+              <div class="article-meta-item"><span class="blog-tag"
+                  style="margin:0;background:rgba(200,168,75,0.15);color:var(--gold);">Caso de Éxito</span></div>
+              <div class="article-share">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <h2>El Desafío</h2>
+            <p>Una multinacional con operaciones en Colombia necesitaba blindar su flota de 12 vehículos ejecutivos para
+              proteger a sus directivos y altos funcionarios que se desplazan frecuentemente entre Bogotá, Medellín y la
+              región del Magdalena Medio. El requerimiento incluía nivel de protección III+ contra armas cortas de alto
+              calibre, con la condición de que el blindaje no alterara significativamente la estética ni la conducción
+              de los vehículos.</p>
+
+            <h2>La Solución AutoSafe</h2>
+            <p>Diseñamos un plan integral de blindaje que incluyó:</p>
+            <ul>
+              <li>Evaluación de riesgo personalizada para cada ruta y perfil de ejecutivo.</li>
+              <li>Blindaje nivel III+ con sistema MAP Multi Angle Protection en los 12 vehículos (Toyota Land Cruiser y
+                BMW X5).</li>
+              <li>Refuerzo de suspensión y sistema de frenado para compensar el peso adicional.</li>
+              <li>Programa de mantenimiento preventivo trimestral para toda la flota.</li>
+              <li>Capacitación al equipo de conductores en protocolos de seguridad con vehículos blindados.</li>
+            </ul>
+
+            <!-- Gallery -->
+            <h2>Galería del Proyecto</h2>
+            <div class="case-gallery">
+              <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
+              <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
+              <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
+              <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
+              <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
+              <div class="case-gallery-item"><i class="fa-solid fa-image"></i></div>
+            </div>
+
+            <h2>Los Resultados</h2>
+            <p>Entregamos los 12 vehículos en un plazo de 16 semanas, cumpliendo con los estándares de calidad y los
+              tiempos pactados. El cliente reportó una satisfacción del 100% en la calidad de acabados, y extendió el
+              contrato de mantenimiento por 3 años adicionales.</p>
+
+            <blockquote>"AutoSafe entendió nuestras necesidades desde el primer día. La calidad del blindaje y la
+              atención postventa superaron nuestras expectativas. Ya llevamos 3 años renovando el contrato."<br><strong
+                style="font-style:normal;font-size:14px;color:var(--mid-gray);display:block;margin-top:8px;">— Director
+                de Seguridad Corporativa</strong></blockquote>
+
+            <!-- CTA -->
+            <div class="cta-banner" style="margin-top:40px;">
+              <div>
+                <h2 style="font-size:22px;">¿Necesita Blindar su <em>Flota Corporativa</em>?</h2>
+                <p>Diseñamos soluciones a medida para empresas e instituciones.</p>
+              </div>
+              <a href="#" class="btn btn-gold" onclick="showPage('contact')">Cotizar Flota</a>
+            </div>
+
+            <!-- Navigation -->
+            <div class="article-nav">
+              <a href="#" onclick="showPage('blog')"><i class="fa-solid fa-arrow-left"></i> Volver a Casos de Éxito</a>
+              <a href="#" onclick="showPage('blog')">Siguiente Caso <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="article-sidebar">
+            <!-- Project Info -->
+            <div class="sidebar-card">
+              <h4>Ficha del Proyecto</h4>
+              <div style="font-size:14px;">
+                <div
+                  style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);">
+                  <span style="color:var(--mid-gray);">Cliente</span><strong>Multinacional</strong></div>
+                <div
+                  style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);">
+                  <span style="color:var(--mid-gray);">Sector</span><strong>Corporativo</strong></div>
+                <div
+                  style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);">
+                  <span style="color:var(--mid-gray);">Ubicación</span><strong>Colombia</strong></div>
+                <div
+                  style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);">
+                  <span style="color:var(--mid-gray);">Vehículos</span><strong>12 unidades</strong></div>
+                <div
+                  style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);">
+                  <span style="color:var(--mid-gray);">Nivel</span><strong>III+</strong></div>
+                <div
+                  style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,106,112,0.06);">
+                  <span style="color:var(--mid-gray);">Marcas</span><strong>Toyota · BMW</strong></div>
+                <div style="display:flex;justify-content:space-between;padding:10px 0;"><span
+                    style="color:var(--mid-gray);">Duración</span><strong>16 semanas</strong></div>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="sidebar-card"
+              style="background:linear-gradient(135deg,var(--midnight),var(--jet));color:var(--white);border:none;">
+              <h4 style="color:var(--celeste);border-color:rgba(184,236,229,0.2);">¿Proyecto Similar?</h4>
+              <p style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:16px;">Cuéntenos su caso y diseñamos la
+                solución ideal.</p>
+              <a href="#" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;"
+                onclick="showPage('contact')">Hablar con un Asesor</a>
+            </div>
+
+            <!-- Other Cases -->
+            <div class="sidebar-card">
+              <h4>Otros Casos de Éxito</h4>
+              <div class="sidebar-related" onclick="showPage('blog')">
+                <div class="sidebar-related-thumb" style="background:rgba(200,168,75,0.1);color:var(--gold);"><i
+                    class="fa-solid fa-trophy"></i></div>
+                <div class="sidebar-related-text">
+                  <h5>Proyecto Especial — Entidad Gubernamental</h5>
+                  <span>Alto Riesgo · 2024</span>
+                </div>
+              </div>
+              <div class="sidebar-related" onclick="showPage('blog')">
+                <div class="sidebar-related-thumb" style="background:rgba(200,168,75,0.1);color:var(--gold);"><i
+                    class="fa-solid fa-trophy"></i></div>
+                <div class="sidebar-related-text">
+                  <h5>Blindaje VIP — Familia Empresaria</h5>
+                  <span>Nivel III · 2023</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: PAYMENT
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-payment">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Transacciones</div>
+        <h1>Pago <em>en Línea</em></h1>
+        <p>Realice pagos seguros de anticipos, abonos y saldos de forma rápida y confiable.</p>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Pago en Línea</div>
+      </div>
+    </div>
+
+    <section class="section-pad">
+      <div class="container" style="max-width:800px;">
+        <div class="section-header text-center" style="margin-left:auto;margin-right:auto;">
+          <div class="overline" style="justify-content:center;">Métodos de Pago</div>
+          <h2>Elija su Método <em>Preferido</em></h2>
+          <p>Todas las transacciones están protegidas con encriptación de grado bancario.</p>
+        </div>
+        <div class="payment-methods">
+          <div class="payment-card">
+            <div class="payment-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <h3>PSE</h3>
+            <p>Transferencia bancaria directa desde su cuenta de ahorros o corriente.</p>
+          </div>
+          <div class="payment-card">
+            <div class="payment-icon"><i class="fa-brands fa-paypal"></i></div>
+            <h3>PayPal</h3>
+            <p>Pagos internacionales seguros con protección al comprador.</p>
+          </div>
+          <div class="payment-card">
+            <div class="payment-icon"><i class="fa-solid fa-credit-card"></i></div>
+            <h3>Tarjeta de Crédito</h3>
+            <p>Visa, Mastercard, American Express. Hasta 36 cuotas disponibles.</p>
+          </div>
+        </div>
+
+        <!-- Payment Form placeholder -->
+        <div
+          style="margin-top:48px;background:var(--light-gray);border-radius:var(--radius);padding:48px;text-align:center;">
+          <i class="fa-solid fa-lock" style="font-size:36px;color:var(--dark-cyan);margin-bottom:16px;"></i>
+          <h3 style="margin-bottom:8px;">Módulo de Pago Seguro</h3>
+          <p style="color:var(--mid-gray);font-size:14px;max-width:400px;margin:0 auto;">Aquí se integrará la pasarela
+            de pago (PlacetoPay / PayU / Stripe). Formulario con referencia, monto y datos de facturación.</p>
+          <div style="display:flex;gap:12px;justify-content:center;margin-top:24px;">
+            <div class="form-group" style="margin:0;width:260px;">
+              <input type="text" placeholder="Número de referencia" disabled>
+            </div>
+            <div class="form-group" style="margin:0;width:180px;">
+              <input type="text" placeholder="Monto $" disabled>
+            </div>
+            <button class="btn btn-primary btn-sm" disabled>Pagar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: CONTACT
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-contact">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Conversemos</div>
+        <h1>Contáctenos</h1>
+        <p>Estamos listos para asesorarle. Solicite su cotización o agende una visita.</p>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / Contáctenos</div>
+      </div>
+    </div>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Form -->
+          <div>
+            <div class="section-header" style="margin-bottom:32px;">
+              <div class="overline">Cotización</div>
+              <h2>Solicite su <em>Cotización</em></h2>
+            </div>
+            <form onsubmit="return false;">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Nombre completo *</label>
+                  <input type="text" placeholder="Juan Pérez">
+                </div>
+                <div class="form-group">
+                  <label>Teléfono *</label>
+                  <input type="tel" placeholder="+57 300 000 0000">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Correo electrónico *</label>
+                  <input type="email" placeholder="ejemplo@correo.com">
+                </div>
+                <div class="form-group">
+                  <label>Ciudad</label>
+                  <input type="text" placeholder="Bogotá">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Servicio de interés *</label>
+                <select>
+                  <option>Seleccione un servicio...</option>
+                  <option>Blindaje de vehículos</option>
+                  <option>Mantenimiento de vehículo blindado</option>
+                  <option>Safe Glass — Vidrio antirrobo</option>
+                  <option>Proyecto especial</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Marca del vehículo</label>
+                  <select>
+                    <option>Seleccione...</option>
+                    <option>Toyota</option>
+                    <option>BMW</option>
+                    <option>Mercedes-Benz</option>
+                    <option>Lexus</option>
+                    <option>Jeep</option>
+                    <option>Audi</option>
+                    <option>Chevrolet</option>
+                    <option>Volkswagen</option>
+                    <option>Land Rover</option>
+                    <option>Otra</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Modelo / Año</label>
+                  <input type="text" placeholder="LC 300 / 2025">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Mensaje o especificaciones adicionales</label>
+                <textarea placeholder="Cuéntenos más sobre sus necesidades de protección..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                <i class="fa-solid fa-paper-plane"></i> Enviar Solicitud
+              </button>
+              <p style="font-size:12px;color:var(--mid-gray);margin-top:12px;text-align:center;">Al enviar acepta
+                nuestra <a href="#" onclick="showPage('privacy')" style="color:var(--dark-cyan);">Política de
+                  Privacidad</a>.</p>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div>
+            <div class="section-header" style="margin-bottom:32px;">
+              <div class="overline">Información</div>
+              <h2>Datos de <em>Contacto</em></h2>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Dirección</h4>
+                <p>Calle 134D # 53 – 43, Bodega 3<br>Bogotá D.C., Colombia</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Teléfonos</h4>
+                <p>+57 601 525 0125<br>+57 317 719 8548</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Correo</h4>
+                <p>blindajes@autosafe.com.co</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Horarios</h4>
+                <p>Lunes a Viernes: 8:00 AM – 5:00 PM<br>Sábados: 8:00 AM – 12:00 PM</p>
+              </div>
+            </div>
+
+            <h4 style="font-family:var(--font-display);font-weight:700;margin-top:32px;margin-bottom:16px;">Redes
+              Sociales</h4>
+            <div style="display:flex;gap:12px;">
+              <a href="#"
+                style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="#"
+                style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i
+                  class="fa-brands fa-facebook"></i></a>
+              <a href="#"
+                style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="#"
+                style="width:44px;height:44px;border-radius:50%;background:rgba(0,156,156,0.1);display:flex;align-items:center;justify-content:center;color:var(--dark-cyan);font-size:18px;"><i
+                  class="fa-brands fa-youtube"></i></a>
+              <a href="#"
+                style="width:44px;height:44px;border-radius:50%;background:rgba(37,211,102,0.1);display:flex;align-items:center;justify-content:center;color:#25D366;font-size:18px;"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="map-placeholder">
+              <i class="fa-solid fa-map-location-dot" style="font-size:36px;opacity:0.4;"></i>
+              Google Maps — Calle 134D # 53–43, Bogotá
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal -->
+    <section class="section-pad bg-light">
+      <div class="container" style="max-width:800px;">
+        <div class="section-header text-center" style="margin-left:auto;margin-right:auto;">
+          <div class="overline" style="justify-content:center;">Legal</div>
+          <h2>Información <em>Legal</em></h2>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+          <a href="#" onclick="showPage('privacy')"
+            style="display:block;background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);cursor:pointer;transition:var(--transition);border:1px solid rgba(0,106,112,0.06);">
+            <h4 style="font-size:16px;margin-bottom:8px;"><i class="fa-solid fa-file-shield"
+                style="color:var(--dark-cyan);margin-right:8px;"></i>Aviso de Privacidad</h4>
+            <p style="font-size:13px;color:var(--mid-gray);">Conozca cómo protegemos y tratamos sus datos personales
+              conforme a la Ley 1581 de 2012.</p>
+          </a>
+          <a href="#" onclick="showPage('terms')"
+            style="display:block;background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);cursor:pointer;transition:var(--transition);border:1px solid rgba(0,106,112,0.06);">
+            <h4 style="font-size:16px;margin-bottom:8px;"><i class="fa-solid fa-file-contract"
+                style="color:var(--dark-cyan);margin-right:8px;"></i>Términos y Condiciones</h4>
+            <p style="font-size:13px;color:var(--mid-gray);">Condiciones generales de uso del sitio web y términos de
+              servicio para cotizaciones y pagos.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: PRIVACY POLICY
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-privacy">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Información Legal</div>
+        <h1>Aviso de <em>Privacidad</em></h1>
+        <p>Política de tratamiento de datos personales conforme a la legislación colombiana.</p>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#"
+            onclick="showPage('contact')">Contáctenos</a> / Aviso de Privacidad</div>
+      </div>
+    </div>
+
+    <section class="section-pad">
+      <div class="container" style="max-width:860px;">
+
+        <div
+          style="background:var(--light-gray);border-radius:var(--radius);padding:24px 32px;margin-bottom:40px;display:flex;align-items:center;gap:16px;">
+          <i class="fa-solid fa-circle-info" style="font-size:24px;color:var(--dark-cyan);"></i>
+          <div>
+            <strong style="font-size:14px;">Última actualización:</strong>
+            <span style="font-size:14px;color:var(--mid-gray);"> {{FECHA_ACTUALIZACION}} — Este documento debe ser
+              revisado y aprobado por el área jurídica de AUTOSAFE S.A. antes de su publicación.</span>
+          </div>
+        </div>
+
+        <div class="legal-content">
+          <h2 style="font-size:22px;margin-bottom:16px;color:var(--midnight);">1. Responsable del Tratamiento</h2>
+          <p><strong>AUTOSAFE S.A.</strong> (en adelante "AutoSafe"), sociedad comercial colombiana con domicilio en la
+            Calle 134D # 53 – 43, Bodega 3, Bogotá D.C., Colombia, identificada con NIT {{NIT_EMPRESA}}, es la entidad
+            responsable del tratamiento de los datos personales recolectados a través de este sitio web y demás canales
+            de contacto.</p>
+          <p><strong>Correo de contacto para datos personales:</strong> blindajes@autosafe.com.co<br>
+            <strong>Teléfono:</strong> +57 601 525 0125
+          </p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">2. Marco Normativo</h2>
+          <p>El presente aviso de privacidad se rige por la Constitución Política de Colombia (Artículo 15), la Ley 1581
+            de 2012 (Ley de Protección de Datos Personales), el Decreto 1377 de 2013, y demás normas que las
+            complementen, modifiquen o sustituyan.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">3. Datos Personales Recolectados</h2>
+          <p>AutoSafe podrá recolectar, almacenar, usar y tratar los siguientes datos personales según el canal de
+            contacto:</p>
+          <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
+            <p style="margin-bottom:8px;"><strong>Datos de identificación:</strong> Nombre completo, número de documento
+              de identidad, ciudad de residencia.</p>
+            <p style="margin-bottom:8px;"><strong>Datos de contacto:</strong> Teléfono fijo y/o celular, correo
+              electrónico, dirección.</p>
+            <p style="margin-bottom:8px;"><strong>Datos del vehículo:</strong> Marca, modelo, año, placa (cuando aplique
+              para cotización de servicios).</p>
+            <p style="margin-bottom:8px;"><strong>Datos de navegación:</strong> Dirección IP, tipo de navegador, páginas
+              visitadas, cookies (ver sección 9).</p>
+            <p><strong>Datos financieros:</strong> Exclusivamente los necesarios para procesar pagos en línea a través
+              de pasarelas certificadas (PSE, tarjeta de crédito). AutoSafe no almacena datos de tarjetas de crédito en
+              sus servidores.</p>
+          </div>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">4. Finalidades del Tratamiento</h2>
+          <p>Los datos personales serán tratados para las siguientes finalidades:</p>
+          <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
+            <p style="margin-bottom:8px;">a) Gestionar solicitudes de cotización de servicios de blindaje y
+              mantenimiento.</p>
+            <p style="margin-bottom:8px;">b) Procesar pagos y transacciones en línea.</p>
+            <p style="margin-bottom:8px;">c) Enviar comunicaciones relacionadas con el servicio contratado (estado del
+              proceso, citas de mantenimiento, garantías).</p>
+            <p style="margin-bottom:8px;">d) Enviar información comercial, promocional y de nuevos servicios (previa
+              autorización del titular).</p>
+            <p style="margin-bottom:8px;">e) Realizar encuestas de satisfacción y mejora del servicio.</p>
+            <p style="margin-bottom:8px;">f) Cumplir obligaciones legales y requerimientos de autoridades competentes.
+            </p>
+            <p>g) Gestionar la relación contractual con clientes, proveedores y aliados comerciales.</p>
+          </div>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">5. Derechos del Titular</h2>
+          <p>De conformidad con la Ley 1581 de 2012, el titular de los datos personales tiene derecho a:</p>
+          <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
+            <p style="margin-bottom:8px;">• Conocer, actualizar y rectificar sus datos personales.</p>
+            <p style="margin-bottom:8px;">• Solicitar prueba de la autorización otorgada.</p>
+            <p style="margin-bottom:8px;">• Ser informado sobre el uso que se ha dado a sus datos.</p>
+            <p style="margin-bottom:8px;">• Revocar la autorización y/o solicitar la supresión de sus datos cuando no se
+              respeten los principios, derechos y garantías constitucionales y legales.</p>
+            <p>• Presentar quejas ante la Superintendencia de Industria y Comercio (SIC) por infracciones a la ley.</p>
+          </div>
+          <p>Para ejercer estos derechos, el titular podrá enviar su solicitud al correo
+            <strong>blindajes@autosafe.com.co</strong> con el asunto "Derechos de datos personales", indicando su nombre
+            completo, documento de identidad y la descripción de su solicitud. AutoSafe dará respuesta dentro de los
+            plazos establecidos por la ley.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">6. Transferencia y Transmisión de Datos
+          </h2>
+          <p>AutoSafe podrá compartir datos personales con terceros únicamente en los siguientes casos: (i) proveedores
+            de servicios tecnológicos y pasarelas de pago que actúen como encargados del tratamiento, bajo contratos de
+            confidencialidad; (ii) entidades del grupo empresarial WBA Security Group; (iii) autoridades competentes
+            cuando exista obligación legal.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">7. Medidas de Seguridad</h2>
+          <p>AutoSafe implementa medidas técnicas, humanas y administrativas para proteger los datos personales contra
+            acceso no autorizado, pérdida, alteración o destrucción, incluyendo: certificado SSL, firewalls, control de
+            acceso a bases de datos, y capacitación al personal autorizado.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">8. Vigencia</h2>
+          <p>Los datos personales serán tratados durante el tiempo necesario para cumplir las finalidades descritas y
+            conforme a los plazos legales de conservación aplicables. El titular podrá solicitar la supresión de sus
+            datos en cualquier momento, salvo que exista obligación legal de conservarlos.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">9. Política de Cookies</h2>
+          <p>Este sitio web utiliza cookies propias y de terceros para mejorar la experiencia de navegación, analizar el
+            tráfico y personalizar contenido. El usuario puede configurar su navegador para rechazar cookies, aunque
+            algunas funcionalidades del sitio podrían verse afectadas. Para más información, consulte la configuración
+            de cookies en su navegador.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">10. Modificaciones</h2>
+          <p>AutoSafe se reserva el derecho de modificar este Aviso de Privacidad en cualquier momento. Las
+            modificaciones serán publicadas en esta misma URL y entrarán en vigencia a partir de su publicación. Se
+            recomienda revisar periódicamente esta página.</p>
+        </div>
+
+        <div style="margin-top:48px;padding-top:32px;border-top:2px solid rgba(0,106,112,0.08);text-align:center;">
+          <p style="font-size:13px;color:var(--mid-gray);">AUTOSAFE S.A. — NIT {{NIT_EMPRESA}}<br>Calle 134D # 53 – 43,
+            Bodega 3 · Bogotá D.C., Colombia<br>blindajes@autosafe.com.co · +57 601 525 0125</p>
+          <a href="#" class="btn btn-outline btn-sm" style="margin-top:16px;" onclick="showPage('contact')"><i
+              class="fa-solid fa-arrow-left"></i> Volver a Contáctenos</a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PAGE: TERMS & CONDITIONS
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-terms">
+    <div class="page-header">
+      <div class="container">
+        <div class="overline">Información Legal</div>
+        <h1>Términos y <em>Condiciones</em></h1>
+        <p>Condiciones generales de uso del sitio web y de los servicios de AutoSafe Blindajes.</p>
+        <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / <a href="#"
+            onclick="showPage('contact')">Contáctenos</a> / Términos y Condiciones</div>
+      </div>
+    </div>
+
+    <section class="section-pad">
+      <div class="container" style="max-width:860px;">
+
+        <div
+          style="background:var(--light-gray);border-radius:var(--radius);padding:24px 32px;margin-bottom:40px;display:flex;align-items:center;gap:16px;">
+          <i class="fa-solid fa-circle-info" style="font-size:24px;color:var(--dark-cyan);"></i>
+          <div>
+            <strong style="font-size:14px;">Última actualización:</strong>
+            <span style="font-size:14px;color:var(--mid-gray);"> {{FECHA_ACTUALIZACION}} — Este documento debe ser
+              revisado y aprobado por el área jurídica de AUTOSAFE S.A. antes de su publicación.</span>
+          </div>
+        </div>
+
+        <div class="legal-content">
+          <h2 style="font-size:22px;margin-bottom:16px;color:var(--midnight);">1. Información General</h2>
+          <p>El presente documento establece los Términos y Condiciones de uso del sitio web
+            <strong>www.autosafe.com.co</strong> (en adelante "el Sitio"), propiedad de <strong>AUTOSAFE S.A.</strong>,
+            sociedad comercial colombiana con domicilio en Bogotá D.C., identificada con NIT {{NIT_EMPRESA}}. El acceso
+            y uso del Sitio implica la aceptación plena e incondicional de estos términos.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">2. Objeto del Sitio</h2>
+          <p>El Sitio tiene como propósito presentar los servicios de blindaje vehicular, mantenimiento de vehículos
+            blindados, vidrio antirrobo (Safe Glass) y proyectos especiales ofrecidos por AutoSafe, así como facilitar
+            la solicitud de cotizaciones, agendamiento de citas, procesamiento de pagos en línea y la divulgación de
+            contenido educativo sobre protección vehicular.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">3. Uso del Sitio</h2>
+          <p>El usuario se compromete a utilizar el Sitio de conformidad con la ley, la moral, el orden público y los
+            presentes Términos. Queda prohibido:</p>
+          <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
+            <p style="margin-bottom:8px;">a) Utilizar el Sitio con fines ilícitos, fraudulentos o contrarios a lo
+              establecido en estos Términos.</p>
+            <p style="margin-bottom:8px;">b) Intentar acceder a áreas restringidas del Sitio o de los sistemas
+              informáticos de AutoSafe.</p>
+            <p style="margin-bottom:8px;">c) Reproducir, distribuir o modificar los contenidos del Sitio sin
+              autorización previa y por escrito.</p>
+            <p>d) Introducir virus, código malicioso o cualquier elemento que pueda afectar el funcionamiento del Sitio.
+            </p>
+          </div>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">4. Cotizaciones y Servicios</h2>
+          <p>Las cotizaciones solicitadas a través del Sitio tienen carácter informativo y no constituyen una oferta
+            comercial vinculante. Los precios, plazos y condiciones definitivas serán confirmados por un asesor
+            comercial de AutoSafe mediante comunicación directa con el cliente.</p>
+          <p>La contratación de cualquier servicio de blindaje o mantenimiento estará sujeta a la firma de un contrato
+            independiente que regulará las condiciones específicas de la prestación del servicio, incluyendo precio,
+            plazos de entrega, niveles de protección, garantías y forma de pago.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">5. Pagos en Línea</h2>
+          <p>Los pagos realizados a través del Sitio serán procesados por pasarelas de pago autorizadas (PSE, PayPal,
+            tarjetas de crédito) que cuentan con sus propios términos de servicio y políticas de seguridad. AutoSafe no
+            almacena datos de tarjetas de crédito ni información financiera sensible en sus servidores.</p>
+          <p>Los pagos en línea corresponden exclusivamente a anticipos, abonos o saldos previamente acordados con un
+            asesor comercial. Cualquier discrepancia en montos debe ser reportada al correo
+            <strong>blindajes@autosafe.com.co</strong> dentro de los 5 días hábiles siguientes a la transacción.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">6. Propiedad Intelectual</h2>
+          <p>Todos los contenidos del Sitio, incluyendo pero no limitándose a textos, imágenes, logotipos, marcas,
+            gráficos, diseño, estructura de navegación, código fuente y bases de datos, son propiedad de AUTOSAFE S.A. o
+            de terceros que han autorizado su uso, y están protegidos por las leyes colombianas e internacionales de
+            propiedad intelectual (Ley 23 de 1982, Decisión Andina 351 de 1993).</p>
+          <p>La marca AUTOSAFE®, el isotipo del escudo y el eslogan "Protegemos lo más preciado... La vida" son marcas
+            registradas de AUTOSAFE S.A. Se prohíbe su reproducción, distribución o uso sin autorización expresa.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">7. Garantías y Limitación de
+            Responsabilidad</h2>
+          <p>Las garantías aplicables a los servicios de blindaje y mantenimiento serán las estipuladas en el contrato
+            de servicios correspondiente y se regirán por las disposiciones del Estatuto del Consumidor (Ley 1480 de
+            2011).</p>
+          <p>AutoSafe no será responsable por: (i) interrupciones temporales del Sitio por mantenimiento o causas de
+            fuerza mayor; (ii) daños derivados del uso inadecuado del Sitio por parte del usuario; (iii) la veracidad de
+            la información proporcionada por el usuario en los formularios de cotización.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">8. Protección de Datos Personales</h2>
+          <p>El tratamiento de datos personales recolectados a través del Sitio se rige por el <a href="#"
+              onclick="showPage('privacy')" style="color:var(--dark-cyan);font-weight:600;">Aviso de Privacidad</a> de
+            AutoSafe y por la Ley 1581 de 2012.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">9. Legislación Aplicable y Jurisdicción
+          </h2>
+          <p>Los presentes Términos y Condiciones se rigen por las leyes de la República de Colombia. Cualquier
+            controversia derivada del uso del Sitio será sometida a la jurisdicción de los jueces y tribunales de Bogotá
+            D.C., Colombia, salvo disposición legal en contrario que establezca una jurisdicción diferente.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">10. Modificaciones</h2>
+          <p>AutoSafe se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las
+            modificaciones serán publicadas en esta URL y entrarán en vigencia a partir de su publicación. El uso
+            continuado del Sitio después de la publicación de cambios implica la aceptación de los mismos.</p>
+
+          <h2 style="font-size:22px;margin:32px 0 16px;color:var(--midnight);">11. Contacto</h2>
+          <p>Para consultas relacionadas con estos Términos y Condiciones, el usuario podrá comunicarse a:</p>
+          <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:20px 24px;margin:16px 0;">
+            <p style="margin-bottom:4px;"><strong>AUTOSAFE S.A.</strong></p>
+            <p style="margin-bottom:4px;">Calle 134D # 53 – 43, Bodega 3 · Bogotá D.C., Colombia</p>
+            <p style="margin-bottom:4px;">Correo: blindajes@autosafe.com.co</p>
+            <p>Teléfono: +57 601 525 0125</p>
+          </div>
+        </div>
+
+        <div style="margin-top:48px;padding-top:32px;border-top:2px solid rgba(0,106,112,0.08);text-align:center;">
+          <p style="font-size:13px;color:var(--mid-gray);">AUTOSAFE S.A. — NIT {{NIT_EMPRESA}}<br>Calle 134D # 53 – 43,
+            Bodega 3 · Bogotá D.C., Colombia<br>blindajes@autosafe.com.co · +57 601 525 0125</p>
+          <a href="#" class="btn btn-outline btn-sm" style="margin-top:16px;" onclick="showPage('contact')"><i
+              class="fa-solid fa-arrow-left"></i> Volver a Contáctenos</a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     FOOTER (Global)
+     ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/logo-white.svg" alt="AutoSafe Blindajes" style="height:40px;margin-bottom:8px;">
+          <p>Protegemos lo más preciado... La vida. Más de 20 años de experiencia en blindaje vehicular con tecnología
+            alemana y presencia internacional.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('services')">Blindaje de Vehículos</a></li>
+            <li><a href="#" onclick="showPage('services')">Mantenimiento</a></li>
+            <li><a href="#" onclick="showPage('services')">Safe Glass</a></li>
+            <li><a href="#" onclick="showPage('services')">Proyectos Especiales</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('about')">Nuestra Historia</a></li>
+            <li><a href="#" onclick="showPage('about')">Misión y Visión</a></li>
+            <li><a href="#" onclick="showPage('about')">Certificaciones</a></li>
+            <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="#">Calle 134D # 53–43 Bod. 3</a></li>
+            <li><a href="#">Bogotá D.C., Colombia</a></li>
+            <li><a href="tel:+576015250125">+57 601 525 0125</a></li>
+            <li><a href="mailto:blindajes@autosafe.com.co">blindajes@autosafe.com.co</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 AutoSafe Blindajes S.A. — Todos los derechos reservados. Parte de WBA Security Group.</span>
+        <div style="display:flex;gap:16px;">
+          <a href="#" onclick="showPage('privacy')">Aviso de Privacidad</a>
+          <a href="#" onclick="showPage('terms')">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════
      JAVASCRIPT — SPA ROUTING
      ═══════════════════════════════════════════════════════════ -->
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
