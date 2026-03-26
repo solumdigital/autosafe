@@ -1,7 +1,7 @@
 # AutoSafe Blindajes — Sitio Web (Wireframe Navegable)
 
 **Versión:** 1.0  
-**Última actualización:** Marzo 2026 
+**Última actualización:** Marzo 2025  
 **Desarrollado por:** Dirección de Marketing — AutoSafe Blindajes
 
 ---
@@ -68,7 +68,7 @@ git init
 git add .
 git commit -m "AutoSafe wireframe v1.0"
 git branch -M main
-git remote add origin https://github.com/[usuario]/autosafe.git
+git remote add origin https://github.com/[usuario]/autosafe-site.git
 git push -u origin main
 # Activar GitHub Pages en Settings > Pages > Source: main / root
 ```
@@ -78,4 +78,4 @@ Subir toda la carpeta al directorio raíz del hosting vía FTP/SFTP.
 
 ---
 
-© 2026 AutoSafe Blindajes S.A. — Parte de WBA Security Group
+© 2025 AutoSafe Blindajes S.A. — Parte de WBA Security Group
