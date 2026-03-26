@@ -78,4 +78,4 @@ Subir toda la carpeta al directorio raíz del hosting vía FTP/SFTP.
 
 ---
 
-© 2025 AutoSafe Blindajes S.A. — Parte de WBA Security Group
+© 2026 AutoSafe Blindajes S.A. — Parte de WBA Security Group
