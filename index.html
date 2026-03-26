@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AutoSafe Blindajes Colombia — Protegemos lo mas preciado... La vida.</title>
+<title>AutoSafe Blindajes — Wireframe Navegable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -54,6 +54,7 @@
       <a href="#" onclick="showPage('home')" class="active" data-page="home">Inicio</a>
       <a href="#" onclick="showPage('about')" data-page="about">Nosotros</a>
       <a href="#" onclick="showPage('services')" data-page="services">Servicios</a>
+      <a href="#" onclick="showPage('blindaje')" data-page="blindaje">Blindaje</a>
       <a href="#" onclick="showPage('blog')" data-page="blog">Blog</a>
       <a href="#" onclick="showPage('payment')" data-page="payment">Pago en Línea</a>
       <a href="#" onclick="showPage('contact')" data-page="contact">Contáctenos</a>
@@ -605,6 +606,402 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
+     PAGE: QUÉ ES EL BLINDAJE
+     ═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-blindaje">
+  <div class="page-header">
+    <div class="container">
+      <div class="overline">Centro de Conocimiento</div>
+      <h1>¿Qué es el <em>Blindaje</em>?</h1>
+      <p>Todo lo que necesita saber sobre protección balística vehicular: tipos, niveles, proceso y materiales.</p>
+      <div class="breadcrumbs"><a href="#" onclick="showPage('home')">Inicio</a> / ¿Qué es el Blindaje?</div>
+    </div>
+  </div>
+
+  <!-- Anchor Navigation -->
+  <div style="background:var(--white);border-bottom:1px solid rgba(0,106,112,0.08);position:sticky;top:80px;z-index:50;">
+    <div class="container">
+      <div class="blindaje-tabs">
+        <a href="#" class="blindaje-tab active" onclick="scrollToBlindaje('intro', event)"><i class="fa-solid fa-book-open"></i> Introducción</a>
+        <a href="#" class="blindaje-tab" onclick="scrollToBlindaje('tipos', event)"><i class="fa-solid fa-layer-group"></i> Tipos</a>
+        <a href="#" class="blindaje-tab" onclick="scrollToBlindaje('niveles', event)"><i class="fa-solid fa-shield-halved"></i> Niveles</a>
+        <a href="#" class="blindaje-tab" onclick="scrollToBlindaje('proceso', event)"><i class="fa-solid fa-gears"></i> Proceso</a>
+        <a href="#" class="blindaje-tab" onclick="scrollToBlindaje('materiales', event)"><i class="fa-solid fa-atom"></i> Materiales</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SECTION 1: INTRODUCCIÓN ═══ -->
+  <section class="section-pad" id="blindaje-intro">
+    <div class="container">
+      <div class="grid-2col grid-2col-aligned">
+        <div>
+          <div class="section-header">
+            <div class="overline">Introducción</div>
+            <h2>¿Qué es el Blindaje <em>Vehicular</em>?</h2>
+          </div>
+          <p style="font-size:17px;color:var(--dark-text);line-height:1.85;margin-bottom:20px;">El blindaje vehicular es un proceso de ingeniería especializada que refuerza la estructura de un vehículo con materiales balísticos certificados, capaces de resistir impactos de proyectiles de armas de fuego y otros elementos de agresión.</p>
+          <p style="font-size:16px;color:var(--mid-gray);line-height:1.8;">En AutoSafe integramos la herencia tecnológica alemana con más de 20 años de experiencia en el mercado colombiano. Nuestra alianza con WBA Security Group y la constante innovación nos permite ofrecer el blindaje más moderno y seguro disponible.</p>
+          <div style="display:flex;gap:16px;margin-top:28px;flex-wrap:wrap;">
+            <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:16px 20px;flex:1;min-width:140px;text-align:center;">
+              <div style="font-family:var(--font-display);font-weight:800;font-size:28px;color:var(--dark-cyan);">4–10</div>
+              <div style="font-size:12px;color:var(--mid-gray);text-transform:uppercase;letter-spacing:0.5px;">Semanas de proceso</div>
+            </div>
+            <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:16px 20px;flex:1;min-width:140px;text-align:center;">
+              <div style="font-family:var(--font-display);font-weight:800;font-size:28px;color:var(--dark-cyan);">15+</div>
+              <div style="font-size:12px;color:var(--mid-gray);text-transform:uppercase;letter-spacing:0.5px;">Estaciones de trabajo</div>
+            </div>
+            <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:16px 20px;flex:1;min-width:140px;text-align:center;">
+              <div style="font-family:var(--font-display);font-weight:800;font-size:28px;color:var(--dark-cyan);">100%</div>
+              <div style="font-size:12px;color:var(--mid-gray);text-transform:uppercase;letter-spacing:0.5px;">Acabados originales</div>
+            </div>
+          </div>
+        </div>
+        <div class="img-placeholder" style="height:420px;">
+          <i class="fa-solid fa-shield-halved"></i>
+          Imagen — Vehículo en proceso de blindaje<br><small>800 × 600px</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 2: TIPOS DE BLINDAJE ═══ -->
+  <section class="section-pad bg-light" id="blindaje-tipos">
+    <div class="container">
+      <div class="section-header text-center" style="max-width:640px;margin-left:auto;margin-right:auto;">
+        <div class="overline" style="justify-content:center;">Características y Tipos</div>
+        <h2>Blindaje <em>Transparente</em> y <em>Opaco</em></h2>
+        <p>Todo vehículo blindado integra dos componentes fundamentales de protección que trabajan en conjunto.</p>
+      </div>
+      <div class="grid-2col" style="gap:32px;margin-top:40px;">
+        <div style="background:var(--white);border-radius:var(--radius);padding:40px 32px;box-shadow:var(--shadow-sm);border-top:4px solid var(--dark-cyan);">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+            <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--celeste),rgba(0,156,156,0.15));display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--midnight);"><i class="fa-solid fa-glass-water"></i></div>
+            <h3 style="font-size:20px;">Blindaje Transparente</h3>
+          </div>
+          <p style="font-size:15px;color:var(--mid-gray);line-height:1.8;margin-bottom:16px;">Los cristales originales son sustituidos por cristales multicapa con policarbonato y protección antiesquirlas, fabricados por las mejores compañías de cristal blindado a nivel mundial.</p>
+          <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:16px;margin-top:16px;">
+            <p style="font-size:13px;color:var(--dark-text);margin:0;"><i class="fa-solid fa-check" style="color:var(--dark-cyan);margin-right:8px;"></i><strong>Diseño exclusivo:</strong> Cristales con corte de precisión CNC para cada modelo.</p>
+            <p style="font-size:13px;color:var(--dark-text);margin:8px 0 0;"><i class="fa-solid fa-check" style="color:var(--dark-cyan);margin-right:8px;"></i><strong>Funcionalidad:</strong> Cristales delanteros operables parcialmente.</p>
+            <p style="font-size:13px;color:var(--dark-text);margin:8px 0 0;"><i class="fa-solid fa-check" style="color:var(--dark-cyan);margin-right:8px;"></i><strong>Protección:</strong> Multicapa con policarbonato antiesquirlas.</p>
+          </div>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius);padding:40px 32px;box-shadow:var(--shadow-sm);border-top:4px solid var(--gold);">
+          <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+            <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,rgba(200,168,75,0.2),rgba(200,168,75,0.08));display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--gold);"><i class="fa-solid fa-car-side"></i></div>
+            <h3 style="font-size:20px;">Blindaje Opaco</h3>
+          </div>
+          <p style="font-size:15px;color:var(--mid-gray);line-height:1.8;margin-bottom:16px;">El corte de materiales se realiza mediante sistema CNC con cortadores Waterjet, Láser y Plasma de alta definición. Las autopartes estandarizadas se integran perfectamente al vehículo.</p>
+          <div style="background:var(--light-gray);border-radius:var(--radius-sm);padding:16px;margin-top:16px;">
+            <p style="font-size:13px;color:var(--dark-text);margin:0;"><i class="fa-solid fa-check" style="color:var(--gold);margin-right:8px;"></i><strong>Precisión CNC:</strong> Corte Waterjet, Láser y Plasma de alta definición.</p>
+            <p style="font-size:13px;color:var(--dark-text);margin:8px 0 0;"><i class="fa-solid fa-check" style="color:var(--gold);margin-right:8px;"></i><strong>Estandarización:</strong> Autopartes uniformes para calidad consistente.</p>
+            <p style="font-size:13px;color:var(--dark-text);margin:8px 0 0;"><i class="fa-solid fa-check" style="color:var(--gold);margin-right:8px;"></i><strong>Mantenimiento:</strong> Diseño modular para fácil reparación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 3: NIVELES DE BLINDAJE ═══ -->
+  <section class="section-pad" id="blindaje-niveles">
+    <div class="container">
+      <div class="section-header text-center" style="max-width:640px;margin-left:auto;margin-right:auto;">
+        <div class="overline" style="justify-content:center;">Niveles y Áreas de Protección</div>
+        <h2>Tres Líneas de Protección para <em>Cada Necesidad</em></h2>
+        <p>Desde protección antiatraco hasta blindaje de alto riesgo. Cada línea está diseñada para un perfil de amenaza específico.</p>
+      </div>
+
+      <!-- ── LÍNEA ESCUDO ── -->
+      <div style="margin-top:48px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);margin-bottom:32px;">
+        <div style="background:linear-gradient(135deg,var(--dark-cyan),var(--caribbean));padding:28px 32px;color:var(--white);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+          <div>
+            <div style="font-size:12px;text-transform:uppercase;letter-spacing:2px;opacity:0.7;margin-bottom:4px;">Línea 1</div>
+            <h3 style="font-size:22px;margin-bottom:6px;">Línea ESCUDO — Protección Antiatraco</h3>
+            <p style="font-size:14px;opacity:0.8;">Protección balística en los puntos más vulnerables, con mínimo impacto en peso y funcionalidad.</p>
+          </div>
+          <div style="background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:50px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:1px;">DELINCUENCIA URBANA</div>
+        </div>
+        <div style="padding:28px 32px;background:var(--white);">
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="niveles-escudo-grid">
+            <div style="border:1px solid rgba(0,106,112,0.1);border-radius:var(--radius-sm);padding:24px;transition:var(--transition);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <div style="width:48px;height:48px;border-radius:10px;background:var(--celeste);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:11px;color:var(--midnight);flex-shrink:0;">AV</div>
+                <div>
+                  <strong style="font-size:15px;">Vidrios Anti-vandálicos</strong>
+                  <div style="font-size:11px;color:var(--dark-cyan);font-weight:700;">Cristal Blindado · 7mm + plus balístico</div>
+                </div>
+              </div>
+              <p style="font-size:13px;color:var(--mid-gray);line-height:1.6;margin-bottom:12px;">Cristales blindados con espesor de 7 mm y plus balístico. La entrada más accesible a la protección vehicular.</p>
+              <div style="font-size:11px;color:var(--mid-gray);"><strong>Protección:</strong> Anti-vandálica con componente balístico</div>
+            </div>
+            <div style="border:1px solid rgba(0,106,112,0.1);border-radius:var(--radius-sm);padding:24px;transition:var(--transition);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <div style="width:48px;height:48px;border-radius:10px;background:var(--celeste);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:11px;color:var(--midnight);flex-shrink:0;">4P</div>
+                <div>
+                  <strong style="font-size:15px;">Escudo 4 Puertas</strong>
+                  <div style="font-size:11px;color:var(--dark-cyan);font-weight:700;">NIJ II-A · Cristal 14mm</div>
+                </div>
+              </div>
+              <p style="font-size:13px;color:var(--mid-gray);line-height:1.6;margin-bottom:12px;">4 puertas + cristales blindados. Vidrios 100% funcionales. Peso adicional: ~47 kg.</p>
+              <div style="font-size:11px;color:var(--mid-gray);"><strong>Munición ref.:</strong> .22, .38, 9mm, .357 Mag</div>
+            </div>
+            <div style="border:1px solid rgba(0,106,112,0.1);border-radius:var(--radius-sm);padding:24px;transition:var(--transition);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <div style="width:48px;height:48px;border-radius:10px;background:var(--celeste);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:11px;color:var(--midnight);flex-shrink:0;">5P</div>
+                <div>
+                  <strong style="font-size:15px;">Escudo 5 Puertas + Vidrios</strong>
+                  <div style="font-size:11px;color:var(--dark-cyan);font-weight:700;">NIJ II-A · Cristal 14mm</div>
+                </div>
+              </div>
+              <p style="font-size:13px;color:var(--mid-gray);line-height:1.6;margin-bottom:12px;">5 puertas + todos los cristales. Apertura 20-25 cm. Respaldo asiento trasero protegido.</p>
+              <div style="font-size:11px;color:var(--mid-gray);"><strong>Munición ref.:</strong> .22, .38, 9mm, .357 Mag</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── LÍNEA URBAN ── -->
+      <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);border:2px solid var(--gold);margin-bottom:32px;position:relative;">
+        <div style="position:absolute;top:16px;right:16px;background:var(--gold);color:var(--jet);font-family:var(--font-display);font-weight:700;font-size:10px;padding:6px 14px;border-radius:50px;letter-spacing:1px;z-index:3;">MÁS SOLICITADA</div>
+        <div style="background:linear-gradient(135deg,var(--midnight),var(--jet));padding:28px 32px;color:var(--white);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+          <div>
+            <div style="font-size:12px;text-transform:uppercase;letter-spacing:2px;opacity:0.7;margin-bottom:4px;">Línea 2</div>
+            <h3 style="font-size:22px;margin-bottom:6px;">Línea URBAN — Blindaje Vehicular Completo</h3>
+            <p style="font-size:14px;opacity:0.8;">Protección integral del habitáculo con cobertura completa de áreas críticas y sistema MAP.</p>
+          </div>
+          <div style="background:rgba(200,168,75,0.2);border:1px solid rgba(200,168,75,0.3);padding:8px 16px;border-radius:50px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:1px;color:var(--gold);">URBANA + ORGANIZADA</div>
+        </div>
+        <div style="padding:28px 32px;background:var(--white);">
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="niveles-escudo-grid">
+            <div style="border:1px solid rgba(200,168,75,0.2);border-radius:var(--radius-sm);padding:24px;background:rgba(200,168,75,0.03);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,rgba(200,168,75,0.2),rgba(200,168,75,0.08));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:12px;color:var(--gold);flex-shrink:0;">U-I</div>
+                <div>
+                  <strong style="font-size:15px;">Urban I</strong>
+                  <div style="font-size:11px;color:var(--gold);font-weight:700;">NIJ II-A · Cristal 14mm</div>
+                </div>
+              </div>
+              <p style="font-size:13px;color:var(--mid-gray);line-height:1.6;margin-bottom:12px;">Armas cortas (.22, .38, .357 Mag, 9mm). Protección a 45° y 90° con sistema MAP.</p>
+              <div style="font-size:11px;color:var(--mid-gray);"><strong>Munición ref.:</strong> .22, .38, .357, 9mm</div>
+            </div>
+            <div style="border:1px solid rgba(200,168,75,0.2);border-radius:var(--radius-sm);padding:24px;background:rgba(200,168,75,0.03);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,rgba(200,168,75,0.2),rgba(200,168,75,0.08));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:12px;color:var(--gold);flex-shrink:0;">U-II</div>
+                <div>
+                  <strong style="font-size:15px;">Urban II</strong>
+                  <div style="font-size:11px;color:var(--gold);font-weight:700;">NIJ II · Cristal 16mm</div>
+                </div>
+              </div>
+              <p style="font-size:13px;color:var(--mid-gray);line-height:1.6;margin-bottom:12px;">Mayor cobertura en costados + respaldo trasero funcional. Cristales de mayor espesor.</p>
+              <div style="font-size:11px;color:var(--mid-gray);"><strong>Munición ref.:</strong> .22, .38, .357, 9mm</div>
+            </div>
+            <div style="border:1px solid rgba(200,168,75,0.2);border-radius:var(--radius-sm);padding:24px;background:rgba(200,168,75,0.03);">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                <div style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,rgba(200,168,75,0.2),rgba(200,168,75,0.08));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:12px;color:var(--gold);flex-shrink:0;">U-III</div>
+                <div>
+                  <strong style="font-size:15px;">Urban III</strong>
+                  <div style="font-size:11px;color:var(--gold);font-weight:700;">NIJ III-A · Cristal 19mm</div>
+                </div>
+              </div>
+              <p style="font-size:13px;color:var(--mid-gray);line-height:1.6;margin-bottom:12px;">Hasta .44 Magnum y 9mm SMG. Techo completo, piso según configuración.</p>
+              <div style="font-size:11px;color:var(--mid-gray);"><strong>Munición ref.:</strong> Hasta .44 Mag, 9mm SMG</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── LÍNEA SUPERIOR ── -->
+      <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.08);margin-bottom:40px;">
+        <div style="background:linear-gradient(135deg,#1a1a1a,var(--jet));padding:28px 32px;color:var(--white);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+          <div>
+            <div style="font-size:12px;text-transform:uppercase;letter-spacing:2px;opacity:0.7;margin-bottom:4px;">Línea 3</div>
+            <h3 style="font-size:22px;margin-bottom:6px;">Línea SUPERIOR — Blindaje Premium y Alto Riesgo</h3>
+            <p style="font-size:14px;opacity:0.8;">Máxima protección. Habitáculo completo, maletero, tanque de combustible y sunroof anulado.</p>
+          </div>
+          <div style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);padding:8px 16px;border-radius:50px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:1px;color:var(--white);">ALTO RIESGO</div>
+        </div>
+        <div style="padding:28px 32px;background:var(--white);">
+          <div style="display:flex;align-items:center;gap:20px;padding:24px;border:1px solid rgba(0,106,112,0.08);border-radius:var(--radius-sm);flex-wrap:wrap;">
+            <div style="width:64px;height:64px;border-radius:14px;background:var(--midnight);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:14px;color:var(--celeste);flex-shrink:0;">SUP</div>
+            <div style="flex:1;min-width:240px;">
+              <strong style="font-size:17px;">Superior</strong>
+              <div style="font-size:12px;color:var(--dark-cyan);font-weight:700;margin-top:2px;">NIJ III / NIJ IV (BR5 / VPAM 6) · Cristal 30-32mm</div>
+              <p style="font-size:14px;color:var(--mid-gray);line-height:1.7;margin-top:10px;">Munición de rifle (7.62x39 FMJ). Habitáculo completo blindado, maletero protegido, tanque de combustible reforzado. Sunroof anulado. Vidrios delanteros: hasta 50% apertura. Traseros fijos.</p>
+            </div>
+            <a href="#" class="btn btn-primary btn-sm" onclick="showPage('contact')" style="flex-shrink:0;">Cotizar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── TABLA RESUMEN ── -->
+      <div style="background:var(--light-gray);border-radius:var(--radius);padding:32px;overflow-x:auto;">
+        <h3 style="font-size:18px;margin-bottom:20px;"><i class="fa-solid fa-table" style="color:var(--dark-cyan);margin-right:8px;"></i>Tabla Resumen de Niveles</h3>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;min-width:640px;">
+          <thead>
+            <tr style="background:var(--midnight);color:var(--white);">
+              <th style="padding:12px 16px;text-align:left;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:0.5px;">PRODUCTO</th>
+              <th style="padding:12px 16px;text-align:center;">NIJ</th>
+              <th style="padding:12px 16px;text-align:center;">CRISTAL</th>
+              <th style="padding:12px 16px;text-align:left;">AMENAZA</th>
+              <th style="padding:12px 16px;text-align:left;">MUNICIÓN REF.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:var(--white);border-bottom:1px solid rgba(0,106,112,0.06);">
+              <td style="padding:12px 16px;font-weight:600;">Vidrios Anti-vandálicos</td>
+              <td style="padding:12px 16px;text-align:center;"><span style="background:var(--celeste);color:var(--midnight);padding:2px 10px;border-radius:50px;font-size:12px;font-weight:700;">—</span></td>
+              <td style="padding:12px 16px;text-align:center;">7 mm</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Anti-vandálica</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Plus balístico</td>
+            </tr>
+            <tr style="background:rgba(0,156,156,0.02);border-bottom:1px solid rgba(0,106,112,0.06);">
+              <td style="padding:12px 16px;font-weight:600;">Escudo 4P</td>
+              <td style="padding:12px 16px;text-align:center;"><span style="background:var(--celeste);color:var(--midnight);padding:2px 10px;border-radius:50px;font-size:12px;font-weight:700;">II-A</span></td>
+              <td style="padding:12px 16px;text-align:center;">14 mm</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Delincuencia Urbana</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">.22, .38, 9mm, .357</td>
+            </tr>
+            <tr style="background:var(--white);border-bottom:1px solid rgba(0,106,112,0.06);">
+              <td style="padding:12px 16px;font-weight:600;">Escudo 5P</td>
+              <td style="padding:12px 16px;text-align:center;"><span style="background:var(--celeste);color:var(--midnight);padding:2px 10px;border-radius:50px;font-size:12px;font-weight:700;">II-A</span></td>
+              <td style="padding:12px 16px;text-align:center;">14 mm</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Delincuencia Urbana</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">.22, .38, 9mm, .357</td>
+            </tr>
+            <tr style="background:rgba(200,168,75,0.04);border-bottom:1px solid rgba(200,168,75,0.15);">
+              <td style="padding:12px 16px;font-weight:600;color:var(--gold);">Urban I</td>
+              <td style="padding:12px 16px;text-align:center;"><span style="background:rgba(200,168,75,0.15);color:var(--gold);padding:2px 10px;border-radius:50px;font-size:12px;font-weight:700;">II-A</span></td>
+              <td style="padding:12px 16px;text-align:center;">14 mm</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Delincuencia Urbana</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">.22, .38, .357, 9mm</td>
+            </tr>
+            <tr style="background:rgba(200,168,75,0.06);border-bottom:1px solid rgba(200,168,75,0.15);">
+              <td style="padding:12px 16px;font-weight:600;color:var(--gold);">Urban II</td>
+              <td style="padding:12px 16px;text-align:center;"><span style="background:rgba(200,168,75,0.15);color:var(--gold);padding:2px 10px;border-radius:50px;font-size:12px;font-weight:700;">II</span></td>
+              <td style="padding:12px 16px;text-align:center;">16 mm</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Urbana + Organizada</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">.22, .38, .357, 9mm</td>
+            </tr>
+            <tr style="background:rgba(200,168,75,0.04);border-bottom:1px solid rgba(200,168,75,0.15);">
+              <td style="padding:12px 16px;font-weight:600;color:var(--gold);">Urban III</td>
+              <td style="padding:12px 16px;text-align:center;"><span style="background:rgba(200,168,75,0.15);color:var(--gold);padding:2px 10px;border-radius:50px;font-size:12px;font-weight:700;">III-A</span></td>
+              <td style="padding:12px 16px;text-align:center;">19 mm</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Delincuencia Organizada</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Hasta .44 Mag</td>
+            </tr>
+            <tr style="background:rgba(0,76,89,0.04);">
+              <td style="padding:12px 16px;font-weight:600;">Superior</td>
+              <td style="padding:12px 16px;text-align:center;"><span style="background:var(--midnight);color:var(--celeste);padding:2px 10px;border-radius:50px;font-size:12px;font-weight:700;">III-IV/BR5</span></td>
+              <td style="padding:12px 16px;text-align:center;">30-32 mm</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">Alto Riesgo</td>
+              <td style="padding:12px 16px;color:var(--mid-gray);">7.62x39 FMJ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <a href="#" class="btn btn-primary" onclick="showPage('contact')">¿Cuál es el Nivel Adecuado para Mí? <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 4: PROCESO DE BLINDAJE ═══ -->
+  <section class="section-pad bg-midnight kevlar-pattern" id="blindaje-proceso">
+    <div class="container">
+      <div class="section-header text-center" style="max-width:640px;margin-left:auto;margin-right:auto;">
+        <div class="overline" style="justify-content:center;">Proceso</div>
+        <h2>5 Etapas de <em>Precisión</em></h2>
+        <p>Cada vehículo pasa por un proceso riguroso de 4 a 10 semanas para garantizar protección total con acabados de fábrica.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px;" class="process-grid">
+        <div style="text-align:center;position:relative;">
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--dark-cyan),var(--caribbean));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--white);box-shadow:0 4px 16px rgba(0,156,156,0.3);">1</div>
+          <h4 style="color:var(--white);font-size:15px;margin-bottom:8px;">Desarmado</h4>
+          <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.6;">Se retiran cristales originales e interiores del vehículo.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--dark-cyan),var(--caribbean));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--white);box-shadow:0 4px 16px rgba(0,156,156,0.3);">2</div>
+          <h4 style="color:var(--white);font-size:15px;margin-bottom:8px;">Blindaje</h4>
+          <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.6;">Habitáculo, postes, pilares, batería y tanque se recubren con material balístico. Se instalan cristales blindados.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--dark-cyan),var(--caribbean));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--white);box-shadow:0 4px 16px rgba(0,156,156,0.3);">3</div>
+          <h4 style="color:var(--white);font-size:15px;margin-bottom:8px;">Pintura</h4>
+          <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.6;">Las partes modificadas se pintan para devolver su apariencia original de fábrica.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--dark-cyan),var(--caribbean));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--white);box-shadow:0 4px 16px rgba(0,156,156,0.3);">4</div>
+          <h4 style="color:var(--white);font-size:15px;margin-bottom:8px;">Armado</h4>
+          <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.6;">Interiores recolocados. Se instalan accesorios de seguridad: sirena, intercomunicador y opcionales.</p>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#d4b45c);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:var(--font-display);font-weight:800;font-size:24px;color:var(--jet);box-shadow:0 4px 16px rgba(200,168,75,0.3);">✓</div>
+          <h4 style="color:var(--gold);font-size:15px;margin-bottom:8px;">Certificación</h4>
+          <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.6;">Se verifican y prueban todos los sistemas y el rendimiento antes de la entrega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 5: MATERIALES ═══ -->
+  <section class="section-pad" id="blindaje-materiales">
+    <div class="container">
+      <div class="section-header text-center" style="max-width:640px;margin-left:auto;margin-right:auto;">
+        <div class="overline" style="justify-content:center;">Materiales</div>
+        <h2>Tecnología de <em>Clase Mundial</em></h2>
+        <p>Sometidos a rigurosos controles de calidad. Continuamente evaluamos proveedores para ofrecer la mejor tecnología del mercado.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:40px;">
+        <div style="background:var(--white);border-radius:var(--radius);padding:28px 20px;text-align:center;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.06);transition:var(--transition);">
+          <div style="width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--celeste),rgba(0,156,156,0.1));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;color:var(--midnight);"><i class="fa-solid fa-glass-water"></i></div>
+          <h4 style="font-size:15px;margin-bottom:6px;">Vidrio Balístico</h4>
+          <p style="font-size:12px;color:var(--mid-gray);">Multicapa con policarbonato AGP. Todos los niveles.</p>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius);padding:28px 20px;text-align:center;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.06);">
+          <div style="width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--celeste),rgba(0,156,156,0.1));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;color:var(--midnight);"><i class="fa-solid fa-ring"></i></div>
+          <h4 style="font-size:15px;margin-bottom:6px;">Aro de Seguridad</h4>
+          <p style="font-size:12px;color:var(--mid-gray);">Metálico de alta resistencia. Todos los niveles.</p>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius);padding:28px 20px;text-align:center;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.06);">
+          <div style="width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--celeste),rgba(0,156,156,0.1));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;color:var(--midnight);"><i class="fa-solid fa-circle-dot"></i></div>
+          <h4 style="font-size:15px;margin-bottom:6px;">Run Flats</h4>
+          <p style="font-size:12px;color:var(--mid-gray);">Llantas de emergencia antipinchazos. Todos los niveles.</p>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius);padding:28px 20px;text-align:center;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.06);">
+          <div style="width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,rgba(200,168,75,0.2),rgba(200,168,75,0.06));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;color:var(--gold);"><i class="fa-solid fa-diamond"></i></div>
+          <h4 style="font-size:15px;margin-bottom:6px;">UD 75</h4>
+          <p style="font-size:12px;color:var(--mid-gray);">Polietileno de alta tenacidad. Niveles 4+ y 5.</p>
+        </div>
+        <div style="background:var(--white);border-radius:var(--radius);padding:28px 20px;text-align:center;box-shadow:var(--shadow-sm);border:1px solid rgba(0,106,112,0.06);">
+          <div style="width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--celeste),rgba(0,156,156,0.1));display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;color:var(--midnight);"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4 style="font-size:15px;margin-bottom:6px;">Acero Balístico</h4>
+          <p style="font-size:12px;color:var(--mid-gray);">Certificado de grado militar. Todos los niveles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="section-pad bg-light">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2>¿Listo para Conocer su <em>Nivel Ideal</em>?</h2>
+          <p>Un asesor especializado evaluará su perfil de riesgo y le recomendará la solución perfecta.</p>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="#" class="btn btn-gold" onclick="showPage('contact')">Solicitar Asesoría Gratuita</a>
+          <a href="#" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
      PAGE: BLOG
      ═══════════════════════════════════════════════════════════ -->
 <div class="page" id="page-blog">
@@ -633,7 +1030,7 @@
             <span class="blog-tag">Educación</span>
             <h3><a href="#" onclick="showPage('article')" style="color:inherit;">¿Qué es el blindaje vehicular y cómo funciona?</a></h3>
             <p>Guía completa sobre los fundamentos del blindaje, niveles de protección y materiales utilizados.</p>
-            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Mar 15, 2025</span><span><i class="fa-regular fa-clock"></i> 8 min lectura</span></div>
+            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Mar 15, 2026</span><span><i class="fa-regular fa-clock"></i> 8 min lectura</span></div>
           </div>
         </div>
         <div class="blog-card">
@@ -644,7 +1041,7 @@
             <span class="blog-tag">Seguridad</span>
             <h3>5 Mitos sobre los Vehículos Blindados</h3>
             <p>Desmontamos las creencias más comunes sobre peso, consumo y conducción de vehículos blindados.</p>
-            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 28, 2025</span><span><i class="fa-regular fa-clock"></i> 5 min lectura</span></div>
+            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 28, 2026</span><span><i class="fa-regular fa-clock"></i> 5 min lectura</span></div>
           </div>
         </div>
         <div class="blog-card">
@@ -655,7 +1052,7 @@
             <span class="blog-tag">Mantenimiento</span>
             <h3>Mantenimiento Preventivo: Claves para su Blindado</h3>
             <p>Por qué el mantenimiento especializado es crucial para la vida útil de su vehículo blindado.</p>
-            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 10, 2025</span><span><i class="fa-regular fa-clock"></i> 6 min lectura</span></div>
+            <div class="blog-meta"><span><i class="fa-regular fa-calendar"></i> Feb 10, 2026</span><span><i class="fa-regular fa-clock"></i> 6 min lectura</span></div>
           </div>
         </div>
       </div>
@@ -717,6 +1114,9 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
+     PAGE: QUÉ ES EL BLINDAJE
+     ═══════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════
      PAGE: BLOG ARTICLE TEMPLATE
      ═══════════════════════════════════════════════════════════ -->
 <div class="page" id="page-article">
@@ -750,7 +1150,7 @@
                 <span style="font-size:11px;color:var(--mid-gray);">Equipo Editorial</span>
               </div>
             </div>
-            <div class="article-meta-item"><i class="fa-regular fa-calendar"></i> Marzo 15, 2025</div>
+            <div class="article-meta-item"><i class="fa-regular fa-calendar"></i> Marzo 15, 2026</div>
             <div class="article-meta-item"><i class="fa-regular fa-clock"></i> 8 min lectura</div>
             <div class="article-meta-item"><span class="blog-tag" style="margin:0;">Educación</span></div>
             <div class="article-share">
@@ -1137,7 +1537,7 @@
               </div>
               <div class="form-group">
                 <label>Modelo / Año</label>
-                <input type="text" placeholder="LC 300 / 2025">
+                <input type="text" placeholder="LC 300 / 2026">
               </div>
             </div>
             <div class="form-group">
@@ -1424,6 +1824,7 @@
           <li><a href="#" onclick="showPage('services')">Mantenimiento</a></li>
           <li><a href="#" onclick="showPage('services')">Safe Glass</a></li>
           <li><a href="#" onclick="showPage('services')">Proyectos Especiales</a></li>
+          <li><a href="#" onclick="showPage('blindaje')">¿Qué es el Blindaje?</a></li>
         </ul>
       </div>
       <div class="footer-col">

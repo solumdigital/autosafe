@@ -84,3 +84,31 @@ if (heroEl) {
     }
   }, { passive: true });
 }
+
+
+
+// Blindaje scroll spy — update active tab on scroll
+window.addEventListener('scroll', function() {
+  var blindajePage = document.getElementById('page-blindaje');
+  if (!blindajePage || !blindajePage.classList.contains('active')) return;
+
+  var sections = ['intro', 'tipos', 'niveles', 'proceso', 'materiales'];
+  var currentSection = sections[0];
+
+  for (var i = 0; i < sections.length; i++) {
+    var el = document.getElementById('blindaje-' + sections[i]);
+    if (el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top <= 200) {
+        currentSection = sections[i];
+      }
+    }
+  }
+
+  document.querySelectorAll('.blindaje-tab').forEach(function(t) {
+    t.classList.remove('active');
+    if (t.getAttribute('onclick') && t.getAttribute('onclick').indexOf("'" + currentSection + "'") !== -1) {
+      t.classList.add('active');
+    }
+  });
+});

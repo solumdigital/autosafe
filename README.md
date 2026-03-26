@@ -68,7 +68,7 @@ git init
 git add .
 git commit -m "AutoSafe wireframe v1.0"
 git branch -M main
-git remote add origin https://github.com/[usuario]/autosafe.git
+git remote add origin https://github.com/[usuario]/autosafe-site.git
 git push -u origin main
 # Activar GitHub Pages en Settings > Pages > Source: main / root
 ```
